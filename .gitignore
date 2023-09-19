@@ -1,0 +1,15 @@
+/**/bin
+/**/obj
+/**/venv*
+/**/__pycache__
+/**/.vs
+/**/.vscode
+/**/.idea
+/**/*.suo
+/**/*.scc
+/**/*.mdf
+/**/*.ldf
+/**/*.csproj.user
+/**/*.DotSettings.user
+/**/*.apk
+/**/*.DS_Store
