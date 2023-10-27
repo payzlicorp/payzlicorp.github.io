@@ -1,5 +1,6 @@
 {"Releases":[
 {"GitTag":"rls_10","Version":"1.2.3"}
+,{"GitTag":"rls_11","Version":"1.2.4"}
 ,{"GitTag":"rls_5","Version":"1.1.0"}
 ,{"GitTag":"rls_6","Version":"1.1.1"}
 ,{"GitTag":"rls_7","Version":"1.2.0"}
