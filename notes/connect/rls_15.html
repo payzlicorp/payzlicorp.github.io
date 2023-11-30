@@ -1,103 +1,153 @@
 <h2 id="included-in-release">Included in Release</h2>
 
-<h3 id="boarding-cost-plus-priced-accounts-to-mes"><strong>Boarding Cost Plus Priced Accounts to MES:</strong></h3>
+<h3 id="boarding-cost-plus-priced-accounts-to-mes">Boarding Cost Plus Priced Accounts to MES:</h3>
 <ul>
   <li>When boarding Cost Plus priced accounts to MES in Repay, ensure ‘Enhanced Cost’ is selected as ‘No’ and ‘Cost Plus Plus’ is selected as ‘No.’</li>
 </ul>
 
-<h3 id="visa-error-fix"><strong>Visa Error Fix:</strong></h3>
+<h3 id="visa-error-fix">Visa Error Fix:</h3>
 <ul>
   <li>Resolved Visa Error 34000: “Cursor xvisatidsdetails does not exist.”</li>
 </ul>
 
-<h3 id="statement-cron-job"><strong>Statement Cron Job:</strong></h3>
+<h3 id="statement-cron-job">Statement Cron Job:</h3>
 <ul>
   <li>Implemented Statement Cron Job for automated statement generation.</li>
 </ul>
 
-<h3 id="dda-change-email-notification"><strong>DDA Change Email Notification:</strong></h3>
+<h3 id="dda-change-email-notification">DDA Change Email Notification:</h3>
 <ul>
   <li>Email notification to risk@payzli.com for DDA changes done by a merchant on any account.</li>
 </ul>
 
-<h3 id="user-type-change"><strong>User Type Change:</strong></h3>
+<h3 id="user-type-change">User Type Change:</h3>
 <ul>
   <li>Provision to change the type of user from contact to authorized representative/owner and vice versa.</li>
 </ul>
 
-<h3 id="assigned-members-in-email"><strong>Assigned Members in Email:</strong></h3>
+<h3 id="assigned-members-in-email">Assigned Members in Email:</h3>
 <ul>
   <li>Assigned members to a ticket will now be displayed in email notifications (excluding merchants and sales partners).</li>
 </ul>
 
-<h3 id="attachment-section-enhancement"><strong>Attachment Section Enhancement:</strong></h3>
+<h3 id="attachment-section-enhancement">Attachment Section Enhancement:</h3>
 <ul>
   <li>Resolved link overflow issues in the attachment section for lead, underwriting, support, and partner modules.</li>
 </ul>
 
-<h3 id="ticket-person-suggestion-fix"><strong>Ticket Person Suggestion Fix:</strong></h3>
+<h3 id="ticket-person-suggestion-fix">Ticket Person Suggestion Fix:</h3>
 <ul>
   <li>Fixed the issue where a person added to the ticket was appearing in the suggestion list for leads, partners, underwriting, and support.</li>
 </ul>
 
-<h3 id="owner-birthdate-update-fix"><strong>Owner Birthdate Update Fix:</strong></h3>
+<h3 id="owner-birthdate-update-fix">Owner Birthdate Update Fix:</h3>
 <ul>
   <li>Resolved the invalid format error when updating owner birthdate in Repay.</li>
 </ul>
 
-<h3 id="lead-conversion-update"><strong>Lead Conversion Update:</strong></h3>
+<h3 id="lead-conversion-update">Lead Conversion Update:</h3>
 <ul>
   <li>Lead conversion now correctly sends the Merchant app link to the second owner’s email when two owners are added.</li>
 </ul>
 
-<h3 id="save-equipment-info-api-update"><strong>Save Equipment Info API Update:</strong></h3>
+<h3 id="save-equipment-info-api-update">Save Equipment Info API Update:</h3>
 <ul>
   <li>Implemented sending terminal IDs in the save_equipment_info API payload for each equipment in the merchant profile screen.</li>
 </ul>
 
-<h3 id="attachment-symbol-update"><strong>Attachment Symbol Update:</strong></h3>
+<h3 id="attachment-symbol-update">Attachment Symbol Update:</h3>
 <ul>
   <li>Implemented the use of the ‘Asterisk’ symbol for the ‘Choose File’ field in the attachment section for leads, partners, and underwriting modules.</li>
 </ul>
 
-<h3 id="special-characters-in-comments-fix"><strong>Special Characters in Comments Fix:</strong></h3>
+<h3 id="special-characters-in-comments-fix">Special Characters in Comments Fix:</h3>
 <ul>
   <li>Resolved the 500 error occurring when adding special characters to the comments section.</li>
 </ul>
 
-<h3 id="character-limit-for-corp-name"><strong>Character Limit for Corp Name:</strong></h3>
+<h3 id="character-limit-for-corp-name">Character Limit for Corp Name:</h3>
 <ul>
   <li>Implemented a character limit for the Corp name field to avoid affecting the Application UI.</li>
 </ul>
 
-<h3 id="signalr-issue-on-team-deletion-fix"><strong>SignalR Issue on Team Deletion Fix:</strong></h3>
+<h3 id="signalr-issue-on-team-deletion-fix">SignalR Issue on Team Deletion Fix:</h3>
 <ul>
   <li>Resolved the SignalR issue when deleting a member from a team in Teams.</li>
 </ul>
 
-<h3 id="email-format-error-fix"><strong>Email Format Error Fix:</strong></h3>
+<h3 id="email-format-error-fix">Email Format Error Fix:</h3>
 <ul>
   <li>Fixed the email format error when creating a sort code, ensuring correct inclusion of Name and Company name.</li>
 </ul>
 
-<h3 id="lead-conversion-error-fix"><strong>Lead Conversion Error Fix:</strong></h3>
+<h3 id="lead-conversion-error-fix">Lead Conversion Error Fix:</h3>
 <ul>
   <li>Fixed the issue in lead conversion where adding two owners sent the merchant app link to the second owner’s email.</li>
 </ul>
 
-<h3 id="repay-error-resolution"><strong>Repay Error Resolution:</strong></h3>
+<h3 id="repay-error-resolution">Repay Error Resolution:</h3>
 <ul>
   <li>Resolved Repay Error - Internal Program Error.</li>
 </ul>
 
-<h3 id="kyc-kyb-payload-discrepancy-fix"><strong>KYC KYB Payload Discrepancy Fix:</strong></h3>
+<h3 id="kyc-kyb-payload-discrepancy-fix">KYC KYB Payload Discrepancy Fix:</h3>
 <ul>
   <li>Resolved the KYC KYB error where the payload expected by Lendflow differed between the sandbox and production environments.</li>
 </ul>
 
-<h3 id="merchant-contact-field-update"><strong>Merchant Contact Field Update:</strong></h3>
+<h3 id="merchant-contact-field-update">Merchant Contact Field Update:</h3>
 <ul>
   <li>Updated “Phone” to “Mobile Number” for Merchant contact field.</li>
+</ul>
+
+<h3 id="authorization-platform-default-setting">Authorization Platform Default Setting</h3>
+<ul>
+  <li>The Authorization Platform will now default to TSYS Sierra.</li>
+</ul>
+
+<h3 id="conversion-flow-adjustment">Conversion Flow Adjustment</h3>
+<ul>
+  <li>The personal guarantee has been removed from the conversion flow to streamline the user interface.</li>
+</ul>
+
+<h3 id="pricing-profile-editing">Pricing Profile Editing</h3>
+<ul>
+  <li>Within the Pricing Profile, when entering edit mode, the Discount rate boxes will now have a border or framing around the percentages for improved visibility. This change addresses concerns raised by @shruti_payzli.</li>
+</ul>
+
+<h3 id="duplicate-fields-removal">Duplicate Fields Removal</h3>
+<ul>
+  <li>Duplicate fields have been removed from the user interface to ensure a cleaner and more user-friendly experience.</li>
+</ul>
+
+<h3 id="flex-fees-selection">Flex Fees Selection</h3>
+<ul>
+  <li>In the Flex Fees section, the selected/enabled fees will now appear on the left, while available/unselected fees will be on the right. The enabled fees will be visually highlighted, providing a clearer indication. Special thanks to @shruti_payzli for the valuable input.</li>
+</ul>
+
+<h3 id="personal-guarantee-requirement">Personal Guarantee Requirement</h3>
+<ul>
+  <li>The personal guarantee requirement in the conversion flow has been disabled for specific roles: Inside Sales Manager, Underwriting Manager, Underwriter, and Administrator. The corresponding permission is “DISABLE PG REQUIREMENT.”</li>
+</ul>
+
+<h3 id="merchant-profile-permissions">Merchant Profile Permissions</h3>
+<ul>
+  <li>New permissions have been added for specific roles (Inside Sales Manager, Underwriting Manager, Underwriter, and Administrator) to access Merchant Risk Profile and Merchant Reporting Profile. The permission name is “Access Merchant Risk Profile, Access Merchant Reporting Profile.”</li>
+</ul>
+
+<h3 id="partner-authorization">Partner Authorization</h3>
+<ul>
+  <li>Partners are now granted the ability to complete the banking information section.</li>
+</ul>
+
+<h3 id="merchant-profile-screen-updates">Merchant Profile Screen Updates</h3>
+<ul>
+  <li>Please refer to the Merchant Profile Updates document for detailed updates to the Merchant Profile screen.</li>
+</ul>
+
+<h3 id="tag-removal-history-log">Tag Removal History Log</h3>
+<ul>
+  <li>When removing a tag from an underwriting ticket, the history log will now accurately reflect the action as “Tags added to account.”</li>
 </ul>
 
 <p>These updates aim to enhance system stability, improve user experience, and address reported issues.</p>
