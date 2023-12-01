@@ -1,0 +1,84 @@
+<h2 id="included-in-release">Included in Release</h2>
+
+<p>Deployed to Environments: <em>Prod, Demo</em></p>
+
+<p>Major Modules:</p>
+
+<p>Enhancements &amp; Updates:</p>
+
+<ol>
+  <li>Statement Monthly Processing -</li>
+  <li>Add Merchant Contacts to merchant leads</li>
+  <li>Add contact section like ownership profile - name, email, phone number, title. Change in merchant profile and Add new lead slide out</li>
+  <li>Add contact will be visible in slid out and in merchant profile</li>
+  <li>Changed industry selection logic in dropdown - issue: category was not selectable in the dropwdown menu while selecting industry.</li>
+  <li>fixes: now we can select group and group items as well in the dropdown (either we can select industry or alternatives we are showing but internally only industry will be selected.) and this fixes done on leads, merchant profile, merchant signup.</li>
+  <li>Add Links In Attachments</li>
+  <li>Separate out Discover MIDs in prod and non prod environment</li>
+  <li>Digital Application - Beneficial Owner Section-  When an authorized signer qualifies as a beneficial owner (has &gt;25% ownership) we need to populate their demographic information in the Owner 1 section of the MPA.</li>
+  <li>Add status Contract_In_Negotiation between qualified and un qualified in partner dashboard.</li>
+  <li>Add Franchise Tag</li>
+  <li>Dialogs that are converted to drawers have some conflicts in UI and while it’s converted to drawers they should have consistency with drawers.</li>
+</ol>
+
+<p>Bug Fixes &amp; Patches:</p>
+
+<ol>
+  <li>Boarding Errors - Kiesler Police Supply</li>
+  <li>Change TSYS mid start</li>
+  <li>KYC/KYB errors</li>
+  <li>796888000153- Pricing Discrepancies</li>
+  <li>Partner info sheet font size should same as merchant app Document font size</li>
+  <li>Risk profile “ Target Res “ is mandatory field but it’s saved without any value while updating</li>
+</ol>
+
+<h2 id="whats-changed">What’s Changed</h2>
+<ul>
+  <li>commit esign partner by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/1360</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1361</li>
+  <li>profile picture hash in login by @RevanthDodla in https://github.com/payzlicorp/connect/pull/1362</li>
+  <li>Fixed long time loading issue in merchant profile by @jagan-payzli in https://github.com/payzlicorp/connect/pull/1363</li>
+  <li>231011 links as attachment by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1364</li>
+  <li>231016 bugfixes UI by @BharathPzli in https://github.com/payzlicorp/connect/pull/1365</li>
+  <li>Comment: removed not null constraint for attachment mime type by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1366</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1367</li>
+  <li>231016 add links to attachment by @BharathPzli in https://github.com/payzlicorp/connect/pull/1368</li>
+  <li>Fixed locale prop mismatch issue so that proper translation is picked… by @BharathPzli in https://github.com/payzlicorp/connect/pull/1369</li>
+  <li>Added a missing landing page enum to fix page crash issue on login by @BharathPzli in https://github.com/payzlicorp/connect/pull/1370</li>
+  <li>commit partner pdf by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/1371</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1372</li>
+  <li>Handled not showing selected user in the dropdown list in add team an… by @BharathPzli in https://github.com/payzlicorp/connect/pull/1374</li>
+  <li>231011 links as attachment by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1377</li>
+  <li>Visa Boarding Error Changes by @nikhil-mannava in https://github.com/payzlicorp/connect/pull/1375</li>
+  <li>History Log Change by @nikhil-mannava in https://github.com/payzlicorp/connect/pull/1380</li>
+  <li>231011 links as attachment by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1381</li>
+  <li>Convert Dialogs to Drawers Issues &amp; Selecting Google Busines Profile issue. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/1378</li>
+  <li>230922 cron job by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/1379</li>
+  <li>231011 links as attachment by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1382</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1383</li>
+  <li>231011 links as attachment by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1384</li>
+  <li>mid qual rate fix by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1385</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1386</li>
+  <li>monetary transactions poc , merchant statement job update by @RevanthDodla in https://github.com/payzlicorp/connect/pull/1387</li>
+  <li>run statement job only on prod by @RevanthDodla in https://github.com/payzlicorp/connect/pull/1388</li>
+  <li>commit partner boarding by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/1390</li>
+  <li>variable name change by @RevanthDodla in https://github.com/payzlicorp/connect/pull/1391</li>
+  <li>231025 partner status column contract in negotiation by @BharathPzli in https://github.com/payzlicorp/connect/pull/1389</li>
+  <li>231011 links as attachment by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1392</li>
+  <li>231018 support communication adjustments by @jagan-payzli in https://github.com/payzlicorp/connect/pull/1393</li>
+  <li>231023 merchant contacts addition by @BharathPzli in https://github.com/payzlicorp/connect/pull/1394</li>
+  <li>Fixed Validation check for merchant contacts by @BharathPzli in https://github.com/payzlicorp/connect/pull/1395</li>
+  <li>Sending user message to raise support ticket in case no case is open and merchants sends a message into payzli system by @keshavajmera in https://github.com/payzlicorp/connect/pull/1376</li>
+  <li>commit leads and mail changes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/1396</li>
+  <li>Comment : added put request output in lendflow by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1398</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1399</li>
+  <li>visa transact boarding error by @snehalpayzli in https://github.com/payzlicorp/connect/pull/1400</li>
+</ul>
+
+<h2 id="new-contributors">New Contributors</h2>
+<ul>
+  <li>@nikhil-mannava made their first contribution in https://github.com/payzlicorp/connect/pull/1375</li>
+  <li>@keshavajmera made their first contribution in https://github.com/payzlicorp/connect/pull/1376</li>
+</ul>
+
+<p><strong>Full Changelog</strong>: https://github.com/payzlicorp/connect/compare/rls_10…rls_11</p>
