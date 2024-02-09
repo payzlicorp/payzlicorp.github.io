@@ -5,6 +5,7 @@
 <ul>
   <li>In the Advanced Search All tab, visibility is now restricted to the organization level, providing a more streamlined user experience.</li>
   <li>invite user flow should show Organization as a mandatory field</li>
+  <li>Add new member in a team will work properly</li>
 </ul>
 
 <h3 id="move-incomplete-partners-to-open-state">Move Incomplete Partners to Open State</h3>
@@ -18,19 +19,16 @@
   <li>Shown document type in support attachments section</li>
 </ul>
 
-<h3 id="partner-management-updates">Partner Management Updates</h3>
+<h3 id="partner-leads-and-profile-updates">Partner Leads and Profile Updates</h3>
 
 <ul>
   <li>Kanban cards now display Partner First Name and Last Name instead of Company Name</li>
   <li>Target industry and target zip codes are now optional fields.</li>
   <li>Business Address - same as Home Address and made it optional</li>
   <li>In add new lead, mobile number is now optional field</li>
-  <li>Dorpdown option list for changing partner lead stage/status is added in parnter profile screen. ‘New Partner Signed’ stage will remain disabled.</li>
-  <li>Extra statuses will be removed from partner lead status change drop down list</li>
-  <li>Driving licence number minimum character limit is removed.</li>
-  <li>PDF validations is added to validate pdf format during upload process to ensure no errors are occuring during/ before esign</li>
-  <li>Handled navigation issue on edit and cancel in partner bio sheet section</li>
-  <li>Handled long text in average monthly volume</li>
+  <li>Dorpdown option list for changing partner lead stage/status is added in partner profile screen. ‘New Partner Signed’ stage will remain disabled.</li>
+  <li>Driving license number minimum character limit is removed.</li>
+  <li>Handling of incorrect custom PDFs in partner account creation. PDF validations is added to validate pdf format during upload process to ensure no errors are occurring during/ before esign</li>
   <li>Removed undefined status label from partner leads</li>
 </ul>
 
@@ -39,43 +37,24 @@
   <li>Change flex fee order - All flex fees should be on left , and selected flex fees should appear on right side of table</li>
   <li>Flex Fee Display Names have been updated to remove codes and provide more descriptive names. eg ‘180 – PCI fee’ will be displayed as Annual PCI Fee</li>
   <li>Fixed issues in updating flex fee values issue</li>
-  <li>Added limit to the character length for Fee rate amount text field</li>
-  <li>Flex fee InputField component is Split into two ( Number Input and Text Input Separate ) to avoid performance issue and code complexity.</li>
 </ul>
 
 <h3 id="business-card">Business Card</h3>
 
 <ul>
   <li>Show option to create business card even if partner have not completed assessment</li>
-  <li>Business card heading should show , Once we create a business card</li>
   <li>Business card - changed placing of phone number and email</li>
 </ul>
 
-<h3 id="user-interface-improvements">User Interface Improvements</h3>
-
+<h3 id="filter">Filter</h3>
 <ul>
-  <li>Removed time from Business Start Date and Birth dates, only date will be there</li>
-  <li>Circle on profile picture</li>
-  <li>Remove view more option for single line statements</li>
-</ul>
-
-<h3 id="app-template">App template</h3>
-
-<ul>
-  <li>Handled issue in create app template</li>
-  <li>Limit merchant templates visibility to partner</li>
-</ul>
-
-<h3 id="filter">filter</h3>
-
-<ul>
-  <li>improvement in filter by sales partner organization</li>
-  <li>filter and show equipments based on auth platform</li>
+  <li>Improvement in filter by sales partner organization</li>
+  <li>Filter and show equipment’s based on auth platform</li>
 </ul>
 
 <h3 id="history">History</h3>
 <ul>
-  <li>when account is approved the comment is missing time stamp date</li>
+  <li>Account approved comment will have time stamp date</li>
   <li>Prevent Empty logs generation by cron job shown in history</li>
 </ul>
 
@@ -83,32 +62,23 @@
 
 <ul>
   <li>Resolved issue with choose equipments in lead conversion flow</li>
-  <li>Do not allow chaning auth platform for partially boarded merchant as MID is generated based on auth platform.</li>
+  <li>Do not allow changing auth platform for partially boarded merchant as MID is generated based on auth platform.</li>
   <li>Amex data fields should not populate in Cost Plus</li>
-  <li>Textbox should appear for Rate/Fee values when you select the Pricing profile edit option.</li>
-  <li>Repay throws Did not find expected card record for card type “6” - this issue occured because Amex, MC, Visa, Discover are mandatory card types for repay</li>
   <li>Removed Duplicate field - Average Ticket</li>
-  <li>Handled long text characters in risk profile section</li>
   <li>Added retry visa product setup</li>
-  <li>handled long dba name</li>
+  <li>Internal boarding section - added validation message for visa/masteracrd program id</li>
+</ul>
+
+<h3 id="user-interface-improvements">User Interface Improvements</h3>
+<ul>
+  <li>Removed time from Business Start Date and Birth dates, only date will be there</li>
 </ul>
 
 <h3 id="miscellaneous-updates">Miscellaneous Updates</h3>
 <p>Numerous bug fixes have been implemented, including:
-- Address city not updating properly.
-- Handling of incorrect custom PDFs in partner account creation.
-- Slide out UI issues.
-- Issues with driving license number character limits.
-- Error handling for various actions in different modules.
-- Alignment and UI issues across multiple screens.
-- Mandate Tax ID before esign
-- Add new member in a team will work properly
-- Estimated monthly processing volume text field Dollar symbol alignment issue fixed
-- Merchant profile - Internal boarding section - added validation message for visa/masteracrd program id
 - Office365 email connectivity issue fixed
 - New support case creation will only be allowed after office 365 connectivity
-- To avoid duplicate records, same UI action will be blocked till the time previous action is complete
-- Handled edit pricing profile section issue in convert to digital app flow</p>
+- To avoid duplicate records, same UI action will be blocked till the time previous action is complete</p>
 
 <p>Various improvements have been made to the UI, attachment management, partner lead management, and bug fixes to enhance overall system stability and performance.
 We believe these updates will significantly improve your experience with Connect. Thank you for your continued support and valuable feedback. If you encounter any issues or have further suggestions, please don’t hesitate to reach out to our tech team.</p>
