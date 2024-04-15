@@ -1,5 +1,90 @@
 <h2 id="included-in-release">Included in Release</h2>
 
+<h3 id="features">Features:</h3>
+
+<ol>
+  <li>
+    <p>Multi-MID Setup Enhancement
+- Introduced functionality for users to select the organization they wish to log in as when using a single email address associated with multiple applications.
+- Users can now complete the sign-up process via confirmation links for unsigned applications.
+- All associated accounts are visible in the login section for ease of access.</p>
+  </li>
+  <li>
+    <p>New Esquire BIN Adjustments
+- Added Esquire Bank to the allowed bank list.
+- Enabled automatic generation of MIDs and sort codes based on Esquire Bank selection for merchants and partners.</p>
+  </li>
+  <li>
+    <p>Sandbox Environment Access
+- Implemented a feature allowing merchants to request access to sandbox accounts.
+- Merchants can now test integration in sandbox environments provided by Visa and Repay.</p>
+  </li>
+  <li>
+    <p>Priority Ticket Assignments
+- Enhanced visibility by displaying internal employees and partners in the “Assigned to” and “Members” sections respectively.</p>
+  </li>
+  <li>
+    <p>Main Menu Organization
+Optimized the layout and organization of the main menu for improved navigation.</p>
+  </li>
+  <li>
+    <p>Password Reset History Record
+- Added history record functionality for password reset actions.</p>
+  </li>
+</ol>
+
+<h2 id="bug-fixes">Bug Fixes:</h2>
+
+<ol>
+  <li>
+    <p>Partner Terms PDF Update
+- Revised PDF documents to comply with partner terms requirements.</p>
+  </li>
+  <li>
+    <p>Required Fields and Date Display Fix
+- Set Business Start Date, SSN, and Address as mandatory fields before e-signature.
+- Resolved issues with incorrect date display in Connect’s View vs. Edit modes for “business_start_date” and “birth day”.</p>
+  </li>
+  <li>
+    <p>Fix for No Website 
+- Match data pulling and tsys boarding error handling for no website.
+- Fixed the issue where “https://” was added as default value if no business website was provided in the merchant profile screen.</p>
+  </li>
+  <li>
+    <p>Pricing Values UX Improvement
+- Addressed issues related to defaulting to incorrect values during editing.</p>
+  </li>
+  <li>
+    <p>Partner Communication Fixes
+- Corrected invalid date and time display in partner communication SMS.
+- Resolved errors encountered while sending training emails to partners.</p>
+  </li>
+  <li>
+    <p>Support Case Communication Permission
+Implemented error messaging for permission issues, providing clear feedback when users lack access to support inboxes.</p>
+  </li>
+  <li>
+    <p>Kanban/Table View Selection
+- Ensured working “Clear Option” for all filters in the sidebar.</p>
+  </li>
+  <li>
+    <p>Convert to Partner Settings Retrieval
+- Fixed errors occurring during the retrieval of saved settings when converting to a partner.</p>
+  </li>
+  <li>
+    <p>Password Issues
+- Improved error handling for forgot password API responses, providing accurate feedback for invalid emails.
+- Implemented proper error messages for inactive user accounts during password reset attempts.</p>
+  </li>
+  <li>
+    <p>Other:
+- Miscellaneous Bug Fixes: Addressed various other minor bugs and enhancements.</p>
+  </li>
+</ol>
+
+<h3 id="known-issues">Known Issues:</h3>
+<p>Esquire Bank MID Discovery: Discover MID functionality for Esquire Bank is currently unavailable and will not be added in this release.</p>
+
 <h2 id="whats-changed">What’s Changed</h2>
 <ul>
   <li>240306 bugfix overflow handling aryan by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2054</li>
