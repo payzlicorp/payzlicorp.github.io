@@ -1,2 +1,13 @@
 {"Releases":[
+{"GitTag":"rls_10","Version":"1.1.4"}
+,{"GitTag":"rls_12","Version":"2.0.0"}
+,{"GitTag":"rls_13","Version":"2.1.0"}
+,{"GitTag":"rls_14","Version":"3.0.0"}
+,{"GitTag":"rls_15","Version":"4.0.0"}
+,{"GitTag":"rls_16","Version":"4.0.1"}
+,{"GitTag":"rls_17","Version":"5.0.0"}
+,{"GitTag":"rls_5","Version":"1.0.0"}
+,{"GitTag":"rls_6","Version":"1.0.1"}
+,{"GitTag":"rls_7","Version":"1.0.2"}
+,{"GitTag":"rls_9","Version":"1.0.4"}
 ]}
