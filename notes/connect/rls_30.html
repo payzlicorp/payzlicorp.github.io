@@ -1,0 +1,93 @@
+<h2 id="included-in-release">Included in Release</h2>
+<p>### Soft Delete Feature
+With soft delete feature below options are provided for deletition 
+- Leads - delete option in 3 dots menu,
+- Partner Leads - delete option in 3 dots menu,
+- Users - Activate/Deactivate option is available,
+- Open Partners - close option similar to merchant closure flow is added</p>
+
+<h3 id="partner-profile-update-hotfix">Partner Profile Update HotFix</h3>
+<p>All the partner information will be editable in any state by the following roles: admin, inside sales manager, inside sales rep, partner development manager, partner support rep. “Edit Partner Profile” new permission is added for this.</p>
+
+<h3 id="dda-update-hotfix">DDA Update Hotfix</h3>
+<p>Admin, developer, merchant support manager, underwriting manager roles will have access to the edit banking profile no matter what the state is. “Edit Banking Profile”  permission is used for this.</p>
+
+<h3 id="bug">Bug</h3>
+<ul>
+  <li>Pricing Disappearing when account is in Lead status</li>
+  <li>Underwriting API’s Fixes - lat long UI fix and invalid ssn error message made descriptive.</li>
+</ul>
+
+<h3 id="other">Other:</h3>
+<ul>
+  <li>Merchant App Fee Adjustments - EBT as dollar amount in merchant app</li>
+  <li>API end point for fetching Visa keys</li>
+  <li>Miscellaneous Bug Fixes: Addressed minor bugs and enhancements.</li>
+</ul>
+
+<h2 id="whats-changed">What’s Changed</h2>
+<ul>
+  <li>Removing Disc Mid on transition from Sandbox to Live by @keshavajmera in https://github.com/payzlicorp/connect/pull/2181</li>
+  <li>240416 handle no partner name org by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2185</li>
+  <li>update key values from response by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2186</li>
+  <li>EBT fee adjustments in final merchant app by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2190</li>
+  <li>Custom error handling for 2FA. by @snehapayzli in https://github.com/payzlicorp/connect/pull/2187</li>
+  <li>240416 merchant lead multiple owner fix by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2184</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2192</li>
+  <li>Pass null in History for Lat Long values are not retrieved by @snehapayzli in https://github.com/payzlicorp/connect/pull/2193</li>
+  <li>Underwriting API’s Fixes to QA by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2195</li>
+  <li>240417 feature soft delete by @keshavajmera in https://github.com/payzlicorp/connect/pull/2194</li>
+  <li>240415 cb cal and esquire cron job by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2198</li>
+  <li>commit logging by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2200</li>
+  <li>commit cron job condition by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2201</li>
+  <li>commit logging for sftp by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2202</li>
+  <li>encrypt the PII data from organization_person_table by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2196</li>
+  <li>Role permission insert script by @keshavajmera in https://github.com/payzlicorp/connect/pull/2199</li>
+  <li>Edit partner profile permission by @keshavajmera in https://github.com/payzlicorp/connect/pull/2205</li>
+  <li>added delete option for merchant lead, partner lead and user by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2197</li>
+  <li>added new loader using lottie according to design provided by ronak by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2191</li>
+  <li>240419 qa deployable code by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2206</li>
+  <li>240419 qa deployable code by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2207</li>
+  <li>240422 Agile Bug - Merchant contact/signing required info by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2208</li>
+  <li>commit permission changes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2204</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2209</li>
+  <li>Sales partner table column by @keshavajmera in https://github.com/payzlicorp/connect/pull/2210</li>
+  <li>added partner closure functionality by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2211</li>
+  <li>added permission based editing of partner dashobard info section and … by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2212</li>
+  <li>Dev to QA Partner Closure Functionality by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2214</li>
+  <li>commit tin and entity formation dates related changes in cb cal cron job by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2213</li>
+  <li>20240416 underwriting error msg changes by @snehapayzli in https://github.com/payzlicorp/connect/pull/2217</li>
+  <li>240419 dda partner permission by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2220</li>
+  <li>240423 invalid ssn fix api payload by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2221</li>
+  <li>240423 fix leads soft delete by @keshavajmera in https://github.com/payzlicorp/connect/pull/2218</li>
+  <li>Sales partner account edit permission by @keshavajmera in https://github.com/payzlicorp/connect/pull/2216</li>
+  <li>moving dev to QA by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2215</li>
+  <li>240419 bank profile edit ux changes by @BharathPzli in https://github.com/payzlicorp/connect/pull/2219</li>
+  <li>Fixed validation issue on business type and bank sponsor fields in add lead slide out by @BharathPzli in https://github.com/payzlicorp/connect/pull/2222</li>
+  <li>dda hotfix by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2223</li>
+  <li>did css changes to make links match the specification by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2224</li>
+  <li>commit proc file by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2225</li>
+  <li>Resetting MID on transition from sandbox  to live by @keshavajmera in https://github.com/payzlicorp/connect/pull/2226</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2227</li>
+  <li>Assigning new Discover Mid after transition from sandbox by @keshavajmera in https://github.com/payzlicorp/connect/pull/2229</li>
+  <li>partner access to edit partner profile by @keshavajmera in https://github.com/payzlicorp/connect/pull/2234</li>
+  <li>240423 soft delete fix by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2235</li>
+  <li>fixed sort code issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2236</li>
+  <li>applied  max prop on  business_volume field by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2231</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2237</li>
+  <li>Role permission insert by @keshavajmera in https://github.com/payzlicorp/connect/pull/2238</li>
+  <li>240419 dda partner permission by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2233</li>
+  <li>Fixed advanced search bugfixes UI by @BharathPzli in https://github.com/payzlicorp/connect/pull/2232</li>
+  <li>240423 equipment url update by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2240</li>
+  <li>filters added mtd_vol, last_month_vol , fees_collected  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2239</li>
+  <li>240419 dda partner permission by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2241</li>
+  <li>assign esquire_full_sort_code to partner  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2242</li>
+  <li>v4.3.0 by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2246</li>
+</ul>
+
+<h2 id="new-contributors">New Contributors</h2>
+<ul>
+  <li>@snehapayzli made their first contribution in https://github.com/payzlicorp/connect/pull/2187</li>
+</ul>
+
+<p><strong>Full Changelog</strong>: https://github.com/payzlicorp/connect/compare/rls_29…rls_30</p>
