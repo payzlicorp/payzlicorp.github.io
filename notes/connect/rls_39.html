@@ -1,0 +1,165 @@
+<h2 id="included-in-release">Included in Release</h2>
+<p>This release is focusses on a mix of new features, bug fixes and several enhancements to streamline operations and onboarding activities.</p>
+
+<h3 id="support-module-refactor">Support Module Refactor</h3>
+<p>The new enhanced Support Module makes it easier for Payzli Internal Users, Partners and Merchants to communicate in a new consolidated view. The following features have been added:
+- Support Table view is now trimmed with easier access to information
+- Support Detailed view now has several new features:
+    - Single screen for Email/SMS and Internal Notes, color-coded for ease
+    - New Case detailed view with easier access to Merchant Profile and other important information
+    - Ability to change the status of a ticket is now a dropdown option
+- Sending messages now supports greater functionalities by choosing mode and from a selected list of users
+- New enhanced screens for Merchant History and Case History
+- Email communications will now be sent from <a href="mailto:support@payzli.com">support@payzli.com</a> (for internal users sending it), merchants@payzli.com (for merchant users) and <a href="mailto:partners@payzli.com">partners@payzli.com</a> (for partner users)
+- Receive alerts on email when a new support case is opened
+- Validations for support case documents based on case type
+- Please note the Communication tab will be removed from merchant profile and integrated under Support</p>
+
+<h3 id="partner-onboarding-refactor">Partner Onboarding Refactor</h3>
+<p>As a part of refactoring and improving the Partner Onboarding experience on Connect, We have released the following changes:
+- The Kanban view swim lanes have been consolidated with actions permitted based on the status.
+- Lead cards will automatically move to the required status as per actions being completed
+    - After sending an application, lead moved to a ‘Partner Application Sent’ lane/state
+    - If modifications are needed, these can be retracted and agreement can be updated, marking the lead’s sub-status as “Contract in Negotiation”
+    - Once the contract is signed, the lead is moved it to “Partner Underwriting”
+         - Approved leads will go to “Completed” Bucket.
+         - Declined leads will go to “Non-Responsive/Dead Leads” 
+    - Sending a partner agreement now has a revamped flow to handle use cases such as residual agreements, attachments, paid by Payzli etc.</p>
+
+<h3 id="showing-errors-while-boarding-in-the-underwriting-section">Showing Errors while boarding in the Underwriting Section:</h3>
+<ul>
+  <li>A new error notification icon is introduced on Merchant Details page</li>
+  <li>Both ‘Missing Info’ and ‘Partner Errors’ will be highlighted in this section and can be copied for further communication</li>
+</ul>
+
+<h3 id="other-enhancements-and-fixes">Other enhancements and Fixes:</h3>
+<ul>
+  <li>Storing files sent to Bank’s SFTP servers in binary storage: Helps us keep a record of these files for logging purposes</li>
+  <li>Bank job changes:
+    <ul>
+      <li>Changed the file formats and error handling scenarios for the files we send to Esquire Bank</li>
+    </ul>
+  </li>
+  <li>Risk V1 fixes:
+    <ul>
+      <li>Fixed a bunch of bugs related to the new Risk module UI and rules engine</li>
+    </ul>
+  </li>
+  <li>Email templates enhancements:
+    <ul>
+      <li>Emails triggered from Connect will now have a new and refreshed look</li>
+    </ul>
+  </li>
+  <li>Bugs:</li>
+  <li>Hotfix to fix a Partner profile permission issue</li>
+  <li>Fixed an issue where some users were showing as ‘null null’ in the search</li>
+</ul>
+
+<h3 id="quality-assurance">Quality Assurance:</h3>
+<p>The QA team worked on UI automation in the Administration and Underwriting sections to reduce testing cycles</p>
+
+<h2 id="whats-changed">What’s Changed</h2>
+<ul>
+  <li>Used Serilog by @alexstromboli in https://github.com/payzlicorp/connect/pull/2364</li>
+  <li>Fix : Sales partner search fix by @keshavajmera in https://github.com/payzlicorp/connect/pull/2363</li>
+  <li>removed checkbox from filter tree dropdowns which cannot be selected … by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2359</li>
+  <li>commit new line by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2365</li>
+  <li>master to QA by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2368</li>
+  <li>mid backfill in merchnat_account_mid_all table from merchant_account … by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2366</li>
+  <li>Feature to get error data while underwriting-&gt;approve and get raw res… by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2268</li>
+  <li>added new font family by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2374</li>
+  <li>fixed null issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2377</li>
+  <li>Update ‘qa’ by @alexstromboli in https://github.com/payzlicorp/connect/pull/2379</li>
+  <li>fix all rules coming as triggered rules for triage alert. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2385</li>
+  <li>240522 forced transactions by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2386</li>
+  <li>removed not null condition. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2387</li>
+  <li>fixed triage dropdown and investigation user by @hbhankhar in https://github.com/payzlicorp/connect/pull/2372</li>
+  <li>changed default sorting order by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2395</li>
+  <li>240523 font size mapping by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2382</li>
+  <li>fixed dropdown issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2380</li>
+  <li>Support Module revamp by @keshavajmera in https://github.com/payzlicorp/connect/pull/2262</li>
+  <li>240516 partner fixes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2367</li>
+  <li>Error Notification api change by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2394</li>
+  <li>240504 support module revamp UI by @BharathPzli in https://github.com/payzlicorp/connect/pull/2397</li>
+  <li>Create support case bug fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/2398</li>
+  <li>created error list drawer by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2371</li>
+  <li>Make support email default. by @snehapayzli in https://github.com/payzlicorp/connect/pull/2401</li>
+  <li>Unique conversation from MS Office API containing multiple emails sce… by @snehapayzli in https://github.com/payzlicorp/connect/pull/2403</li>
+  <li>History logs changes for Support by @keshavajmera in https://github.com/payzlicorp/connect/pull/2399</li>
+  <li>240528 support module additional changes by @BharathPzli in https://github.com/payzlicorp/connect/pull/2408</li>
+  <li>Dev to QA by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2402</li>
+  <li>Initiator mail from merchant profile by @snehapayzli in https://github.com/payzlicorp/connect/pull/2413</li>
+  <li>Risk Cal details order change bug fix by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2412</li>
+  <li>Assigned user details on history card by @keshavajmera in https://github.com/payzlicorp/connect/pull/2410</li>
+  <li>Added support editor form validations by @BharathPzli in https://github.com/payzlicorp/connect/pull/2411</li>
+  <li>added start_date from history logs by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2416</li>
+  <li>Sending merchant account id to signal R method by @keshavajmera in https://github.com/payzlicorp/connect/pull/2418</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2419</li>
+  <li>240507 support new design layout by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2396</li>
+  <li>240529 integrating phosphoricon by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2420</li>
+  <li>240304 module residuals by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2427</li>
+  <li>change of email templates and content by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2426</li>
+  <li>Sending curent user id on signalR by @keshavajmera in https://github.com/payzlicorp/connect/pull/2422</li>
+  <li>Integrated signalR in support communication screen by @BharathPzli in https://github.com/payzlicorp/connect/pull/2423</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2428</li>
+  <li>add search path by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2431</li>
+  <li>migration deployment fix by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2432</li>
+  <li>update migration version by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2434</li>
+  <li>240305 residual UI by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2383</li>
+  <li>sequence of migration script by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2435</li>
+  <li>Dev by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2436</li>
+  <li>fixed css typo &amp; breaking css by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2437</li>
+  <li>fixed css typo &amp; breaking css by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2438</li>
+  <li>error logging by @keshavajmera in https://github.com/payzlicorp/connect/pull/2433</li>
+  <li>Fixed padding issue in support tab inside merchant profile screen by @BharathPzli in https://github.com/payzlicorp/connect/pull/2429</li>
+  <li>Permission for bank sponsor section by @keshavajmera in https://github.com/payzlicorp/connect/pull/2442</li>
+  <li>240516 partner fixes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2441</li>
+  <li>fix for : if credit Ratio is 0 its comming as – , fixed by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2439</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2444</li>
+  <li>240507 support new design layout by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2430</li>
+  <li>Added minor bugfixes in support editor email to and cc list by @BharathPzli in https://github.com/payzlicorp/connect/pull/2447</li>
+  <li>fixed minor bugs by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2448</li>
+  <li>changed default opened sidevie by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2453</li>
+  <li>Dev by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2454</li>
+  <li>Get body for all mails fetch api by @snehapayzli in https://github.com/payzlicorp/connect/pull/2455</li>
+  <li>
+    <ul>
+      <li>added permission for residual nav by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2459</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>reverting to old font - cera pro font by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2460</li>
+    </ul>
+  </li>
+  <li>commit maintenance by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2450</li>
+  <li>Added ux changes in support by @BharathPzli in https://github.com/payzlicorp/connect/pull/2462</li>
+  <li>fixed dev interface conflicts with qa by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2465</li>
+  <li>Added log events by @keshavajmera in https://github.com/payzlicorp/connect/pull/2457</li>
+  <li>creating permission based view for support pages by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2461</li>
+  <li>error notification error bug by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2466</li>
+  <li>fixed more styling by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2467</li>
+  <li>Dev by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2464</li>
+  <li>fixing style by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2468</li>
+  <li>Dev by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2469</li>
+  <li>small fix in view details by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2474</li>
+  <li>240604 visa alignment issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2472</li>
+  <li>20240603 error notification bug by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2475</li>
+  <li>partner if assessment is complete handle clases by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2477</li>
+  <li>esquire and api changes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2471</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2479</li>
+  <li>making support merchant support attachment fixes by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2480</li>
+  <li>
+    <ul>
+      <li>added Access_Bank_Sponsor permission for edit bank sponser in merch… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2483</li>
+    </ul>
+  </li>
+  <li>Fixed scrollbar padding and minor style issues by @BharathPzli in https://github.com/payzlicorp/connect/pull/2470</li>
+  <li>240604 support missing ux by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2485</li>
+  <li>Dev by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2484</li>
+  <li>Added scroll to last msg/email on sending an email/sms fix support by @BharathPzli in https://github.com/payzlicorp/connect/pull/2487</li>
+  <li>handelled null condition by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2496</li>
+  <li>Qa by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2501</li>
+</ul>
+
+<p><strong>Full Changelog</strong>: https://github.com/payzlicorp/connect/compare/rls_37…rls_39</p>
