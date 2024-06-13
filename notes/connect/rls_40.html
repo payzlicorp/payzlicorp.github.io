@@ -1,0 +1,101 @@
+<h2 id="included-in-release">Included in Release</h2>
+
+<p>This quick release focusses on a large number of fixes and enhancements across Payzli Connect modules such as support, residuals, risk and other modules.</p>
+
+<h3 id="residuals">Residuals</h3>
+<ul>
+  <li>Residual Program Creation and Residual Reports view has now been added to the residuals module</li>
+</ul>
+
+<h3 id="support-module-fixes">Support Module fixes</h3>
+<p>As a part of continuous improvements, we have fixes minor issues and enhancements reported by our QA and larger operations team such as the following:</p>
+
+<ul>
+  <li>Support emails/notifications, timestamps and other minor issues</li>
+  <li>Improved the navigation by adding a back button across breadcrumbs in the support case details view</li>
+  <li>Showing the latest email instead of complete thread for relevant users</li>
+  <li>URL and duplicate emails and email links related fixes</li>
+  <li>Field related checks and word overflow issues for text copies</li>
+  <li>Hyperlinks are now clickable in SMSes</li>
+</ul>
+
+<h3 id="risk">Risk</h3>
+<ul>
+  <li>Fixed minor UI issues and bugs related to the new Risk V1 release</li>
+</ul>
+
+<h3 id="other-enhancements-and-fixes">Other enhancements and Fixes:</h3>
+
+<ul>
+  <li>Hotfix to support Visa’s new parameters while onboarding a new merchant. We need this to scale and eliminating an operational step at Visa’s end.</li>
+  <li>Merchant agreement related changes:</li>
+  <li>Created a combined Merchant agreement for Esquire and CBCal to be approved</li>
+  <li>Made changes to the Esquire pdfs as per bank requirements and new fields</li>
+</ul>
+
+<h3 id="quality-assurance">Quality Assurance:</h3>
+<p>The QA team worked on adding Risk and Residuals to sanity scripts post release and UI automation for the profile, partner leads section</p>
+
+<h2 id="whats-changed">What’s Changed</h2>
+<ul>
+  <li>240605 rebase qa to dev by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2488</li>
+  <li>240605 risk fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2509</li>
+  <li>removed extra changes. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2512</li>
+  <li>fixed migration changes. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2513</li>
+  <li>240605 feature add config values by @keshavajmera in https://github.com/payzlicorp/connect/pull/2502</li>
+  <li>Removed microsoft mail integration when trying to create a support case by @BharathPzli in https://github.com/payzlicorp/connect/pull/2500</li>
+  <li>Adding log in delete User Api by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2508</li>
+  <li>Outer mails integration by @snehapayzli in https://github.com/payzlicorp/connect/pull/2511</li>
+  <li>Fixed condition to show go live button in sandbox mode by @BharathPzli in https://github.com/payzlicorp/connect/pull/2497</li>
+  <li>signup pricing bug by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2498</li>
+  <li>fixed small issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2494</li>
+  <li>commit Bank sponcer changes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2482</li>
+  <li>fixed column id name fix. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2514</li>
+  <li>org name not coming fix by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2492</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2515</li>
+  <li>fixed hideing assignee, team in merchant view and added members list by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2505</li>
+  <li>
+    <ul>
+      <li>added rule execution info icon and info slider in triage review pag… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2516</li>
+    </ul>
+  </li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2518</li>
+  <li>Assigning member when merchant is logged-in by @keshavajmera in https://github.com/payzlicorp/connect/pull/2520</li>
+  <li>240605 fix support usertype by @keshavajmera in https://github.com/payzlicorp/connect/pull/2522</li>
+  <li>240605 retry job by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2526</li>
+  <li>fixed payload for removing attachment by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2523</li>
+  <li>remove address verification checks and similar while boarding cp merchant by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2527</li>
+  <li>240610 support remove attachment fix by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2528</li>
+  <li>Support sender user name by @keshavajmera in https://github.com/payzlicorp/connect/pull/2524</li>
+  <li>240607 support bugfixes UI by @BharathPzli in https://github.com/payzlicorp/connect/pull/2521</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2532</li>
+  <li>20240524 esquire pdf creation by @snehapayzli in https://github.com/payzlicorp/connect/pull/2425</li>
+  <li>Combined MPA by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2533</li>
+  <li>Added validation check for merchant field while creating support case by @BharathPzli in https://github.com/payzlicorp/connect/pull/2537</li>
+  <li>Added tooltip changes to show to and cc users in support email card by @BharathPzli in https://github.com/payzlicorp/connect/pull/2535</li>
+  <li>240610 checkbox fix by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2536</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2538</li>
+  <li>Duplicate email fix for initial mail. by @snehapayzli in https://github.com/payzlicorp/connect/pull/2541</li>
+  <li>Fixed word overflow issue in email or sms card in support by @BharathPzli in https://github.com/payzlicorp/connect/pull/2539</li>
+  <li>240612 support fixes by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2540</li>
+  <li>240611 bugfixes by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2534</li>
+  <li>Support fixes - duplicate email, UI fixes by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2542</li>
+  <li>Added a home breadcrumb in support case chat view to improve UX by @BharathPzli in https://github.com/payzlicorp/connect/pull/2544</li>
+  <li>Support back button breadcrumb modification by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2546</li>
+  <li>Get only the unique mail in response by @snehapayzli in https://github.com/payzlicorp/connect/pull/2548</li>
+  <li>Added changes to show any hyperlinks as clickable text in support sms card by @BharathPzli in https://github.com/payzlicorp/connect/pull/2543</li>
+  <li>show latest mail instead of complete mail thread by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2549</li>
+  <li>Started showing single reply email instead of whole email thread in support by @BharathPzli in https://github.com/payzlicorp/connect/pull/2550</li>
+  <li>Latest mail in conversation view UI changes by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2551</li>
+  <li>Flat rate Credit card rate to be disabled for Cost Plus by @snehapayzli in https://github.com/payzlicorp/connect/pull/2560</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2561</li>
+  <li>Fixed hyperlink tooltip alignment issue in support editor by @BharathPzli in https://github.com/payzlicorp/connect/pull/2562</li>
+  <li>Login url changed by @snehapayzli in https://github.com/payzlicorp/connect/pull/2563</li>
+  <li>Email template login url change  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2565</li>
+  <li>hotfix visa onboarding by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2570</li>
+  <li>Multiple pdf upload fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/2568</li>
+  <li>PDF file update by @snehapayzli in https://github.com/payzlicorp/connect/pull/2573</li>
+  <li>Release by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2576</li>
+</ul>
+
+<p><strong>Full Changelog</strong>: https://github.com/payzlicorp/connect/compare/rls_39…rls_40</p>
