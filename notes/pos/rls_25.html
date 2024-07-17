@@ -1,0 +1,950 @@
+<p><strong>Release Notes: Version 9.0.0</strong></p>
+
+<p><strong>Overview</strong></p>
+
+<p>Version 9.0.0 brings a host of improvements, bug fixes, and UX design changes to enhance the performance and usability of our POS system. This update addresses critical issues, refactors code for improved maintainability.</p>
+
+<h2 id="whats-changed">What’s Changed</h2>
+<ul>
+  <li>231004 trello bugs and techdebt by @karthik-payzli in https://github.com/payzlicorp/pos/pull/920</li>
+  <li>Migrated Module by @sanjaytngd in https://github.com/payzlicorp/pos/pull/918</li>
+  <li>20230929 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/922</li>
+  <li>Notifcation and Background refresh by @rahulyoganand in https://github.com/payzlicorp/pos/pull/923</li>
+  <li>Rules api changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/924</li>
+  <li>Bugs by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/916</li>
+  <li>231004 trello bugs and techdebt by @karthik-payzli in https://github.com/payzlicorp/pos/pull/925</li>
+  <li>20230929 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/926</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/927</li>
+  <li>Added interfaces for service files and repository files by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/928</li>
+  <li>added interfaces for repository classes and service classes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/929</li>
+  <li>Temporary changes to be reverted back in the next commit by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/930</li>
+  <li>revert commit migration script by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/931</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/932</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/933</li>
+  <li>231004 trello bugs and techdebt by @karthik-payzli in https://github.com/payzlicorp/pos/pull/934</li>
+  <li>procedure changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/935</li>
+  <li>231004 trello bugs and techdebt by @karthik-payzli in https://github.com/payzlicorp/pos/pull/936</li>
+  <li>bug fixes and performance fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/900</li>
+  <li>POS changes for UMS refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/917</li>
+  <li>[Frontend] Session management changes  by @rahulyoganand in https://github.com/payzlicorp/pos/pull/937</li>
+  <li>Fix for logout issue by @rahulyoganand in https://github.com/payzlicorp/pos/pull/938</li>
+  <li>230912 sale with socket by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/939</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/940</li>
+  <li>bug fix with session expiry on remember me by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/941</li>
+  <li>Added error snackbar for session expired by @rahulyoganand in https://github.com/payzlicorp/pos/pull/942</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/943</li>
+  <li>231004 trello bugs and techdebt by @karthik-payzli in https://github.com/payzlicorp/pos/pull/944</li>
+  <li>Bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/945</li>
+  <li>get All supplier offline mode fixed by @karthik-payzli in https://github.com/payzlicorp/pos/pull/946</li>
+  <li>minor refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/950</li>
+  <li>231018 offline mode bugs by @karthik-payzli in https://github.com/payzlicorp/pos/pull/949</li>
+  <li>231004 trello bugs and techdebt by @karthik-payzli in https://github.com/payzlicorp/pos/pull/951</li>
+  <li>Updated SortField by @sanjaytngd in https://github.com/payzlicorp/pos/pull/952</li>
+  <li>Sync to Elastic by @sanjaytngd in https://github.com/payzlicorp/pos/pull/921</li>
+  <li>231004 trello bugs and techdebt by @karthik-payzli in https://github.com/payzlicorp/pos/pull/955</li>
+  <li>POS features vary based on the industry by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/948</li>
+  <li>unit testing fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/959</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/958</li>
+  <li>231019 frontent unit test by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/956</li>
+  <li>migration fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/960</li>
+  <li>user account deletion by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/961</li>
+  <li>transaction changes added by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/962</li>
+  <li>231018 offline mode bugs by @karthik-payzli in https://github.com/payzlicorp/pos/pull/957</li>
+  <li>Appointment Grouping by @sanjaytngd in https://github.com/payzlicorp/pos/pull/954</li>
+  <li>Delete User changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/963</li>
+  <li>Migrations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/965</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/964</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/966</li>
+  <li>Feature management by @rahulyoganand in https://github.com/payzlicorp/pos/pull/967</li>
+  <li>231027 appointment grouping by @karthik-payzli in https://github.com/payzlicorp/pos/pull/968</li>
+  <li>231019 frontent unit test by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/969</li>
+  <li>231019 frontent unit test by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/973</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/974</li>
+  <li>231027 appointment grouping by @karthik-payzli in https://github.com/payzlicorp/pos/pull/971</li>
+  <li>Reward Redemption Program Bug Fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/975</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/977</li>
+  <li>Get Services Api enhancement and bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/980</li>
+  <li>231004 trello bugs and techdebt by @karthik-payzli in https://github.com/payzlicorp/pos/pull/976</li>
+  <li>Minor changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/982</li>
+  <li>Sms related changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/984</li>
+  <li>Admin Repository added by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/985</li>
+  <li>resolve issues by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/983</li>
+  <li>Edit appointment flow by @sanjaytngd in https://github.com/payzlicorp/pos/pull/979</li>
+  <li>231027 appointment grouping by @karthik-payzli in https://github.com/payzlicorp/pos/pull/981</li>
+  <li>Merge QA Branch for Release by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/986</li>
+  <li>Test Case Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/987</li>
+  <li>merging master to qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/992</li>
+  <li>231004 trello bugs and techdebt by @karthik-payzli in https://github.com/payzlicorp/pos/pull/989</li>
+  <li>Block Time Procedure Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/991</li>
+  <li>Spacing issue fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/994</li>
+  <li>merging master to qa  by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/995</li>
+  <li>Submodules update by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/999</li>
+  <li>db wrapper code update on submodules update by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1002</li>
+  <li>Appstore permission issue fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1003</li>
+  <li>merge master to qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1004</li>
+  <li>[Android] Removed unnecessary permissions by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1005</li>
+  <li>transaction settings bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1006</li>
+  <li>merge qa branch with latest master branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1007</li>
+  <li>Refactor proc calls by @sanjaytngd in https://github.com/payzlicorp/pos/pull/998</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/990</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/997</li>
+  <li>Remember me fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1010</li>
+  <li>Plans Backend Changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/970</li>
+  <li>[Frontend] PMS by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1011</li>
+  <li>[Frontend] master to qa merge conflicts by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1014</li>
+  <li>merging master to qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1013</li>
+  <li>minor refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1016</li>
+  <li>231127 get user and offline mode by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1015</li>
+  <li>231019 frontent unit test by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/996</li>
+  <li>[Frontend] PMS by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1017</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1018</li>
+  <li>Fixed mail invitation login flow issues by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1019</li>
+  <li>Resolved master to qa merge conflicts by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1022</li>
+  <li>merge master to qa branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1020</li>
+  <li>[Frontend] PMS by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1023</li>
+  <li>plans changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1024</li>
+  <li>Sales Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/988</li>
+  <li>Coupons issue by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1008</li>
+  <li>connect application url fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1025</li>
+  <li>Appointment Notes / Comments Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1009</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1027</li>
+  <li>Sales fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1029</li>
+  <li>merge qa to master branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1032</li>
+  <li>merge qa to master branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1033</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1031</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1034</li>
+  <li>Qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1035</li>
+  <li>[QA] Accept invitation by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1036</li>
+  <li>Sign in flow fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1038</li>
+  <li>merge qa branch to master branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1039</li>
+  <li>231019 frontent unit test by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1026</li>
+  <li>Merge pull request #1039 from payzlicorp/qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1040</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1041</li>
+  <li>Coupon Proc Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1043</li>
+  <li>create appointment/ edit appointment/ cancel appointment performance fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1044</li>
+  <li>unit tests by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1046</li>
+  <li>Sms handling by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1012</li>
+  <li>231207 revise sms handling by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1042</li>
+  <li>Migrations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1048</li>
+  <li>Bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1047</li>
+  <li>sales report changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1049</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1045</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1052</li>
+  <li>231212 tatto enhancements by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1053</li>
+  <li>sales report additional changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1050</li>
+  <li>POS APIs performance fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1056</li>
+  <li>Bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1055</li>
+  <li>migration by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1057</li>
+  <li>Sale Refund Flow by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1051</li>
+  <li>20231215 active users fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1058</li>
+  <li>refund_fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1059</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1054</li>
+  <li>Bug Fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1060</li>
+  <li>Test Cases by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1061</li>
+  <li>refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1028</li>
+  <li>added API to update last billed date and connect application status  by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1062</li>
+  <li>Unit tests, Push Notification IOS and bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1063</li>
+  <li>view my profile feature added for roles technician and manager. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1064</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1065</li>
+  <li>Role Features Addition by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1066</li>
+  <li>Added Role Mappings by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1068</li>
+  <li>update_pos_branch_details API update. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1072</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1070</li>
+  <li>calendar google meet change by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1069</li>
+  <li>Report CSV Export by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1071</li>
+  <li>Add api/v1/plans/get_pos_details by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1074</li>
+  <li>Appointment Flow Tattoo Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1076</li>
+  <li>minor change by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1077</li>
+  <li>default value added by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1078</li>
+  <li>Employee Feature Mappings by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1079</li>
+  <li>Coupons Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1080</li>
+  <li>Enable Virtual Appointments feature validation checks by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1082</li>
+  <li>technician employee related bugs by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1083</li>
+  <li>231212 tatto enhancements by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1084</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1081</li>
+  <li>features and permission related fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1087</li>
+  <li>Create User Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1088</li>
+  <li>Bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1086</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1085</li>
+  <li>Sales And Transaction Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1075</li>
+  <li>Sale transactions refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1089</li>
+  <li>process payment API change by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1091</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1092</li>
+  <li>Sale transactions refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1094</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1095</li>
+  <li>Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1093</li>
+  <li>Sale transactions refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1096</li>
+  <li>Appointment fee by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1073</li>
+  <li>Appointment Confirmation Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1098</li>
+  <li>Migrations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1099</li>
+  <li>Update Column Type by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1100</li>
+  <li>Update Column Type by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1101</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1102</li>
+  <li>Update Column Type by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1103</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1105</li>
+  <li>permission related fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1104</li>
+  <li>Test Cases by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1090</li>
+  <li>240103 cashdiscounts by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1107</li>
+  <li>231227 new sale changes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1108</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1109</li>
+  <li>industry related changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1106</li>
+  <li>231117 bug fixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1110</li>
+  <li>240102 app bar corrections by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1111</li>
+  <li>AppointmentFee by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1112</li>
+  <li>Migrations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1113</li>
+  <li>Migrations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1114</li>
+  <li>Migrations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1115</li>
+  <li>get users tenant branches info api changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1116</li>
+  <li>Minor api endpoint fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1117</li>
+  <li>Sale Refinements by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1119</li>
+  <li>240102 app bar corrections by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1120</li>
+  <li>Add Transaction Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1121</li>
+  <li>240102 app bar corrections by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1122</li>
+  <li>Refund Transactions by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1118</li>
+  <li>Pax TTP Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1124</li>
+  <li>update pos_connect_id to branch_id by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1123</li>
+  <li>deprecate get_pos_details API by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1128</li>
+  <li>tax checkout updates by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1126</li>
+  <li>240401 refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1130</li>
+  <li>Test Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1129</li>
+  <li>240102 app bar corrections by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1132</li>
+  <li>Tax Refinements and add custom tax into sales by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1131</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1133</li>
+  <li>added Cash Discount Percentage by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1136</li>
+  <li>Transaction Data by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1135</li>
+  <li>231227 new sale changes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1137</li>
+  <li>240102 app bar corrections by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1138</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1139</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1141</li>
+  <li>Added Visa response into our apis by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1142</li>
+  <li>Bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1144</li>
+  <li>signal R classes renaming. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1145</li>
+  <li>bug corrections jan 8th bug by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1143</li>
+  <li>[Frontend] Cash discount changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1146</li>
+  <li>Bug fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1148</li>
+  <li>removed pos connect id from POS by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1147</li>
+  <li>npgsql database pooling set to false. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1149</li>
+  <li>serverless Redis backplane changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1154</li>
+  <li>Bug fixes for Cash Discount by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1152</li>
+  <li>240110 printer standard integration by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1151</li>
+  <li>URL change to from pos to connect via billing. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1157</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1158</li>
+  <li>file name change by @alexstromboli in https://github.com/payzlicorp/pos/pull/1161</li>
+  <li>Added sso for pos to connect and vice versa by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1166</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1155</li>
+  <li>Refund Amount by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1167</li>
+  <li>minor change by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1162</li>
+  <li>Elastic fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1168</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1169</li>
+  <li>unit tests fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1170</li>
+  <li>240111 cleanup by @alexstromboli in https://github.com/payzlicorp/pos/pull/1164</li>
+  <li>SignalR change for multiple apps to use the same redis server. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1171</li>
+  <li>240112 flutter sdk version change by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1174</li>
+  <li>Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1175</li>
+  <li>Sale corrections and sale details fields hide on depend on statuses by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1177</li>
+  <li>Prorated Fee Fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1173</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1179</li>
+  <li>Table Update by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1182</li>
+  <li>Bulk_Fetch by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1178</li>
+  <li>240110 printer standard integration by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1180</li>
+  <li>241101 serverless by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1181</li>
+  <li>Get Sales Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1184</li>
+  <li>241101 serverless by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1183</li>
+  <li>minor refactoring. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1185</li>
+  <li>240118 user profile picture changes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1188</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1189</li>
+  <li>Public Get Customers by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1190</li>
+  <li>sales manage stock issue resolve by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1192</li>
+  <li>refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1193</li>
+  <li>Cron Job fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1191</li>
+  <li>Product fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1195</li>
+  <li>241101 serverless by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1196</li>
+  <li>Cron Job Fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1194</li>
+  <li>minor refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1199</li>
+  <li>241101 serverless by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1200</li>
+  <li>240122 reuse UI elements by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1201</li>
+  <li>bug fix. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1202</li>
+  <li>SMS Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1203</li>
+  <li>minor changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1205</li>
+  <li>Inventory Validations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1197</li>
+  <li>240122 reuse UI elements by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1204</li>
+  <li>money owed report fixed by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1206</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1207</li>
+  <li>240122 reuse UI elements by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1208</li>
+  <li>Used LogEvac by @alexstromboli in https://github.com/payzlicorp/pos/pull/1209</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1210</li>
+  <li>reward redemption program fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1211</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1212</li>
+  <li>240122 reuse UI elements by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1213</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1215</li>
+  <li>Fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1214</li>
+  <li>merge master branch to qa branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1218</li>
+  <li>240122 reuse UI elements by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1217</li>
+  <li>Refactoring Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1216</li>
+  <li>240122 reuse UI elements by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1219</li>
+  <li>240130 refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1220</li>
+  <li>elastic search bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1222</li>
+  <li>bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1221</li>
+  <li>Rule Settings bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1223</li>
+  <li>240122 reuse UI elements by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1224</li>
+  <li>delete sale procedure update by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1226</li>
+  <li>Update Profile Bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1227</li>
+  <li>minor signalR change by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1228</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1229</li>
+  <li>Using single signalr connection instead of multiple connections by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1225</li>
+  <li>240122 reuse UI elements by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1231</li>
+  <li>Tech Debt by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1230</li>
+  <li>updated input classes to records for immutability. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1232</li>
+  <li>minor refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1233</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1234</li>
+  <li>Deprecate sale flow by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1236</li>
+  <li>calls to signalr should happen from the controller methods rather tha… by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1237</li>
+  <li>240122 reuse UI elements by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1238</li>
+  <li>Google Calendar Sync Refactoring Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1239</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1240</li>
+  <li>NUll check error in new appointment by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1242</li>
+  <li>donation corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1243</li>
+  <li>merge qa branch to master branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1244</li>
+  <li>Elastic Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1245</li>
+  <li>Signal r issues by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1246</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1247</li>
+  <li>Daily Cron Changes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1248</li>
+  <li>Entities Refactoring and Test Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1249</li>
+  <li>Service &amp; Coupons Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1251</li>
+  <li>send signalr message on profile update to refresh modules wherever th… by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1252</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1253</li>
+  <li>Proposal and Quote Module by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1250</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1255</li>
+  <li>240209 prodbeta by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1256</li>
+  <li>db wrapper changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1257</li>
+  <li>
+    <ol>
+      <li>Elastic search refactored by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1259</li>
+    </ol>
+  </li>
+  <li>communication module refactoring changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1258</li>
+  <li>09022024 refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1260</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1262</li>
+  <li>minor changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1263</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1264</li>
+  <li>Proposal Quote Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1268</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1267</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1266</li>
+  <li>13022024 refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1270</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1269</li>
+  <li>caching WIP by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1276</li>
+  <li>140224 refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1275</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1280</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1273</li>
+  <li>Redis Implementation for caching by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1278</li>
+  <li>prod beta bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1282</li>
+  <li>Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1283</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1274</li>
+  <li>240215 bugfix text overflow by @rkzofficial in https://github.com/payzlicorp/pos/pull/1272</li>
+  <li>prod beta fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1284</li>
+  <li>printer settings apis by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1286</li>
+  <li>quote corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1285</li>
+  <li>validation changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1287</li>
+  <li>updating submodules by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1289</li>
+  <li>Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1288</li>
+  <li>quotes feedback enhancements by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1290</li>
+  <li>quote corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1291</li>
+  <li>enhancement changes and fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1293</li>
+  <li>quote corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1292</li>
+  <li>240110 printer standard integration by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1254</li>
+  <li>Cron Job Quote reminder and template changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1299</li>
+  <li>quote corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1298</li>
+  <li>Coupon reward handling by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1296</li>
+  <li>fixes incorrect data in grid view when columns count change. by @rkzofficial in https://github.com/payzlicorp/pos/pull/1295</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1294</li>
+  <li>payment reminders and invoice settings apis by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1300</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1302</li>
+  <li>240110 printer standard integration by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1301</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1304</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1303</li>
+  <li>fixes reward text box overflow by @rkzofficial in https://github.com/payzlicorp/pos/pull/1297</li>
+  <li>20240223 bugfix UI production beta by @rkzofficial in https://github.com/payzlicorp/pos/pull/1305</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1306</li>
+  <li>Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1308</li>
+  <li>Bug fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1310</li>
+  <li>appointment procedure bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1307</li>
+  <li>quote corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1309</li>
+  <li>minor changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1311</li>
+  <li>merge qa to master by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1313</li>
+  <li>caching active user count for user profile details API by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1312</li>
+  <li>merge master to qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1314</li>
+  <li>Added coupon info for sale in quote controller by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1315</li>
+  <li>minor change by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1317</li>
+  <li>Report Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1318</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1316</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1319</li>
+  <li>Bug fixes production beta by @rkzofficial in https://github.com/payzlicorp/pos/pull/1320</li>
+  <li>User Branches by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1322</li>
+  <li>Branch Addres by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1325</li>
+  <li>quote corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1323</li>
+  <li>minor enhancements by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1324</li>
+  <li>cache get tenant details by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1321</li>
+  <li>240110 printer standard integration by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1326</li>
+  <li>quotes invoice feedback changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1327</li>
+  <li>migration changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1328</li>
+  <li>migration changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1329</li>
+  <li>send quote sms implementation changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1330</li>
+  <li>240226 prod by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1331</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1332</li>
+  <li>Quote Rule enhancement and Cron Job Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1333</li>
+  <li>Fixes messages overlap, scroll issues, reports screen hamburger icon by @rkzofficial in https://github.com/payzlicorp/pos/pull/1334</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1335</li>
+  <li>ChangeDue by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1336</li>
+  <li>quote corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1337</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1338</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1339</li>
+  <li>Fixed cash discount not visible in sales details by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1340</li>
+  <li>minor changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1341</li>
+  <li>Item Discounts by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1342</li>
+  <li>Report filters by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1344</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1343</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1345</li>
+  <li>service and product discount by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1346</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1347</li>
+  <li>Fixes Alignement issues in Sales details, Clicking confirm twice, update appointment, Review templates by @rkzofficial in https://github.com/payzlicorp/pos/pull/1349</li>
+  <li>service and product discount by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1348</li>
+  <li>Sale validations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1350</li>
+  <li>Validations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1352</li>
+  <li>Cron Job Changes, Email templates and beta bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1353</li>
+  <li>sale tax corrections and apply discount by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1351</li>
+  <li>240226 prod by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1354</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1355</li>
+  <li>Fixes timezone, adds toast message, fixes service cost amount being zero by @rkzofficial in https://github.com/payzlicorp/pos/pull/1356</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1357</li>
+  <li>Money Owned Report by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1358</li>
+  <li>240226 prod by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1360</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1361</li>
+  <li>commission split procedure change by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1359</li>
+  <li>Add Default Rules by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1362</li>
+  <li>Fixes beta bugs by @rkzofficial in https://github.com/payzlicorp/pos/pull/1364</li>
+  <li>240226 prod by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1365</li>
+  <li>enhancement changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1366</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1368</li>
+  <li>Fixes supplier being reflected in another branch while editing products by @rkzofficial in https://github.com/payzlicorp/pos/pull/1367</li>
+  <li>Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1369</li>
+  <li>production beta fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1371</li>
+  <li>Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1370</li>
+  <li>Permission and feature changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1372</li>
+  <li>Fixes padding between sales status and icons in sales card by @rkzofficial in https://github.com/payzlicorp/pos/pull/1373</li>
+  <li>240226 prod by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1374</li>
+  <li>Added default role permissions api and some error code by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1375</li>
+  <li>Validation changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1376</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1377</li>
+  <li>Customer api error corrections by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1378</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1380</li>
+  <li>corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1379</li>
+  <li>Pos Beta suggestion changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1381</li>
+  <li>commission split fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1383</li>
+  <li>Features caching by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1382</li>
+  <li>beta bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1384</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1385</li>
+  <li>Fixes custom filter in sales by @rkzofficial in https://github.com/payzlicorp/pos/pull/1386</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1388</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1387</li>
+  <li>Remove async by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1389</li>
+  <li>production beta fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1390</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1391</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1392</li>
+  <li>procedure fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1393</li>
+  <li>QuickBooks by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1271</li>
+  <li>Cache Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1394</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1395</li>
+  <li>Sale Validations &amp; Migrations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1396</li>
+  <li>Async Triggering by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1397</li>
+  <li>Commented by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1399</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1400</li>
+  <li>subscription fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1401</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1402</li>
+  <li>240226 prod by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1403</li>
+  <li>minor changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1404</li>
+  <li>240304 app tour by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1398</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1406</li>
+  <li>Logout issue while pos switching by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1405</li>
+  <li>240124 purposal invoice by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1408</li>
+  <li>WebHoook Handling by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1411</li>
+  <li>Users Services, Users Products API enhancements and Beta Bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1413</li>
+  <li>240226 prod by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1412</li>
+  <li>corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1414</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1410</li>
+  <li>Fixes Sales tip Changes by @rkzofficial in https://github.com/payzlicorp/pos/pull/1409</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1416</li>
+  <li>minor fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1415</li>
+  <li>IOS SDK version change 17.0 by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1417</li>
+  <li>240226 prod by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1418</li>
+  <li>Test Cases by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1419</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1420</li>
+  <li>corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1421</li>
+  <li>Merge qa to master branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1423</li>
+  <li>reports improved readability by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1426</li>
+  <li>Cache bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1425</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1431</li>
+  <li>1402 reports by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1432</li>
+  <li>Fixes review page and business review toggles by @rkzofficial in https://github.com/payzlicorp/pos/pull/1428</li>
+  <li>Reports Test Cases by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1433</li>
+  <li>delete product and delete service apis by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1430</li>
+  <li>fire and forget tasks cleanup. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1436</li>
+  <li>Bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1434</li>
+  <li>240315 hotfixes mandeep by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1435</li>
+  <li>240314 prod phase1 hotfixes by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1429</li>
+  <li>merging master to qa branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1437</li>
+  <li>delete coupon, delete user apis and beta fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1439</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1438</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1441</li>
+  <li>Quick books validations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1422</li>
+  <li>bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1442</li>
+  <li>240318 sales refactoring by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1443</li>
+  <li>Logs by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1444</li>
+  <li>Adds fields in reports and fixes quote settings in offline mode! by @rkzofficial in https://github.com/payzlicorp/pos/pull/1440</li>
+  <li>Microsoft login corrections by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1445</li>
+  <li>merging master to qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1446</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1447</li>
+  <li>Prod beta bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1448</li>
+  <li>add_or_update_business_info api changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1451</li>
+  <li>Business Setting email and phone number correction by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1450</li>
+  <li>240318 sales refactoring by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1449</li>
+  <li>Sale_Reports by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1455</li>
+  <li>WebHook Config by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1453</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1457</li>
+  <li>Technician &amp; Item Names by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1456</li>
+  <li>Force user to update app (Android) by @rkzofficial in https://github.com/payzlicorp/pos/pull/1458</li>
+  <li>240322 qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1459</li>
+  <li>240322 qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1462</li>
+  <li>Frontend refactoring latest by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1454</li>
+  <li>PIN Check by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1452</li>
+  <li>In app update ios by @rkzofficial in https://github.com/payzlicorp/pos/pull/1463</li>
+  <li>Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1464</li>
+  <li>Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1465</li>
+  <li>security headers fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1466</li>
+  <li>Remove Hourly Report by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1461</li>
+  <li>240322 qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1468</li>
+  <li>240322 qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1469</li>
+  <li>Test Cases by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1471</li>
+  <li>240322 qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1472</li>
+  <li>240318 sales refactoring by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1470</li>
+  <li>240329 reports by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1474</li>
+  <li>Tax Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1473</li>
+  <li>240318 sales refactoring by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1475</li>
+  <li>database table and migration changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1476</li>
+  <li>migration change by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1477</li>
+  <li>Return_Sale_Items by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1467</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1460</li>
+  <li>240318 sales refactoring by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1478</li>
+  <li>delete tax api changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1480</li>
+  <li>Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1479</li>
+  <li>procedure change by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1481</li>
+  <li>Null Check by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1482</li>
+  <li>Product report refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1483</li>
+  <li>20240327 new tax enhacement by @rkzofficial in https://github.com/payzlicorp/pos/pull/1485</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1487</li>
+  <li>Bug fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1486</li>
+  <li>Migations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1489</li>
+  <li>240402 pin functionality by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1488</li>
+  <li>Null Check by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1490</li>
+  <li>20240327 new tax enhacement by @rkzofficial in https://github.com/payzlicorp/pos/pull/1491</li>
+  <li>20240327 new tax enhacement by @rkzofficial in https://github.com/payzlicorp/pos/pull/1492</li>
+  <li>20240327 new tax enhacement by @rkzofficial in https://github.com/payzlicorp/pos/pull/1493</li>
+  <li>Bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1494</li>
+  <li>tax calculation api by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1495</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1496</li>
+  <li>CategoryId by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1498</li>
+  <li>240402 pin functionality by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1499</li>
+  <li>Pos connect issue by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1497</li>
+  <li>Language_Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1500</li>
+  <li>tax changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1502</li>
+  <li>corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1501</li>
+  <li>Over Unit Price Tax Calculation by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1504</li>
+  <li>240402 pin functionality by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1505</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1503</li>
+  <li>Tax Calculation logic change by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1506</li>
+  <li>Adds confirm delete dialog in tax setting by @rkzofficial in https://github.com/payzlicorp/pos/pull/1507</li>
+  <li>240329 reports by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1508</li>
+  <li>240208 bug fixes prod beta by @alexstromboli in https://github.com/payzlicorp/pos/pull/1515</li>
+  <li>240402 pin functionality by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1516</li>
+  <li>Procedure Change by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1518</li>
+  <li>Fixes error messages were not being cleared when closing the drawer by @rkzofficial in https://github.com/payzlicorp/pos/pull/1517</li>
+  <li>240402 pin functionality by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1519</li>
+  <li>Bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1521</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1522</li>
+  <li>240402 pin functionality by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1524</li>
+  <li>240329 reports by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1525</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1527</li>
+  <li>240402 pin functionality by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1529</li>
+  <li>master to qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1530</li>
+  <li>240329 reports by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1531</li>
+  <li>adds TaxAmountBreakup in add_sale and update_sale by @rkzofficial in https://github.com/payzlicorp/pos/pull/1528</li>
+  <li>tax changes in sales flow by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1532</li>
+  <li>migration change by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1533</li>
+  <li>fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1534</li>
+  <li>migration fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1535</li>
+  <li>Tax and sales refactoring by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1536</li>
+  <li>Taxes and breakups in sales details page by @rkzofficial in https://github.com/payzlicorp/pos/pull/1537</li>
+  <li>Reports refactoring  by @rkzofficial in https://github.com/payzlicorp/pos/pull/1523</li>
+  <li>Fix file upload issue in transaction by @rkzofficial in https://github.com/payzlicorp/pos/pull/1538</li>
+  <li>Productivity report refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1539</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1540</li>
+  <li>Refactoring by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1541</li>
+  <li>Accessibility Id by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1526</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1542</li>
+  <li>input validation added for appointments by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1543</li>
+  <li>Fix taxNameErrorText value assignment in clearAddUpdateTaxSettings me… by @rkzofficial in https://github.com/payzlicorp/pos/pull/1544</li>
+  <li>merge qa to master by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1547</li>
+  <li>Fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1546</li>
+  <li>240415 sprint by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1550</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1551</li>
+  <li>240416 sprint by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1549</li>
+  <li>SignUp by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1554</li>
+  <li>language corrections(vietnamese) by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1553</li>
+  <li>New Ui designs by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1558</li>
+  <li>Validations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1555</li>
+  <li>time cards feature implementation by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1557</li>
+  <li>code refactored by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1559</li>
+  <li>Hotfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1556</li>
+  <li>merge master to qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1562</li>
+  <li>240402 pin functionality by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1563</li>
+  <li>240418 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1561</li>
+  <li>minor fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1564</li>
+  <li>Sign up, Sign In and Invite revamped by @rkzofficial in https://github.com/payzlicorp/pos/pull/1565</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1566</li>
+  <li>TestCase by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1570</li>
+  <li>Reset Password and Forget Password flow revamped by @rkzofficial in https://github.com/payzlicorp/pos/pull/1569</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1572</li>
+  <li>Frontend changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1573</li>
+  <li>240416 firebase crashlytics by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1568</li>
+  <li>240418 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1574</li>
+  <li>scripts changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1575</li>
+  <li>240418 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1578</li>
+  <li>unit test fixes and input validations by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1576</li>
+  <li>240418 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1580</li>
+  <li>20240424 bug fixes by @rkzofficial in https://github.com/payzlicorp/pos/pull/1581</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1582</li>
+  <li>minor unit test fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1583</li>
+  <li>240418 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1584</li>
+  <li>unit tests by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1585</li>
+  <li>Adds Get Started Page for mobile by @rkzofficial in https://github.com/payzlicorp/pos/pull/1586</li>
+  <li>fixes cash discount when merging sales by @rkzofficial in https://github.com/payzlicorp/pos/pull/1587</li>
+  <li>branchTaxId in taxes and fees request by @rkzofficial in https://github.com/payzlicorp/pos/pull/1589</li>
+  <li>branchTaxId in taxes and fees request by @rkzofficial in https://github.com/payzlicorp/pos/pull/1590</li>
+  <li>minor fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1591</li>
+  <li>email templates changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1588</li>
+  <li>240422 welcome UI by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1571</li>
+  <li>2404 refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1592</li>
+  <li>corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1593</li>
+  <li>Few bug fixes by @rkzofficial in https://github.com/payzlicorp/pos/pull/1594</li>
+  <li>240418 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1595</li>
+  <li>Test Cases by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1597</li>
+  <li>UI changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1598</li>
+  <li>240425 amplitude integration by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1596</li>
+  <li>240418 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1599</li>
+  <li>240422 welcome UI by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1600</li>
+  <li>240418 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1601</li>
+  <li>Test Cases by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1602</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1603</li>
+  <li>time card bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1605</li>
+  <li>240422 welcome UI by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1604</li>
+  <li>procedure fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1606</li>
+  <li>merge qa to master by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1607</li>
+  <li>CNP Merchant ID by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1608</li>
+  <li>240425 amplitude integration by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1609</li>
+  <li>UI fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1610</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1611</li>
+  <li>Multiple Appointments in Single time slot enhancement changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1612</li>
+  <li>cnp merchant id by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1613</li>
+  <li>Bug Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1614</li>
+  <li>Appointment bookings outside of working hours enhancement changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1618</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1619</li>
+  <li>minor fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1620</li>
+  <li>240503 timecard filters by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1617</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1621</li>
+  <li>240416 firebase crashlytics by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1624</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1623</li>
+  <li>240506 drawers update by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1622</li>
+  <li>UI Changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1625</li>
+  <li>unit test fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1626</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1627</li>
+  <li>resend signup email changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1628</li>
+  <li>quote validation changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1629</li>
+  <li>cnp_fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1630</li>
+  <li>240506 drawers update by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1631</li>
+  <li>adding email in the link for reset password by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1632</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1634</li>
+  <li>Uc payments refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1635</li>
+  <li>UI Changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1636</li>
+  <li>admin drawer designs corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1637</li>
+  <li>Unified Checkout by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1638</li>
+  <li>Migrations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1639</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1640</li>
+  <li>Fixed issues by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1641</li>
+  <li>BugFix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1643</li>
+  <li>implement resend verification code for signup and ui corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1644</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1645</li>
+  <li>email template changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1642</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1646</li>
+  <li>setup progress bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1647</li>
+  <li>Bugs by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1649</li>
+  <li>Fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1648</li>
+  <li>Fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1651</li>
+  <li>refactoring changes and bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1650</li>
+  <li>merge qa to master branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1652</li>
+  <li>minor bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1655</li>
+  <li>MetaKey From Config by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1653</li>
+  <li>HostFrom Config by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1656</li>
+  <li>ui corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1654</li>
+  <li>Hot fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1657</li>
+  <li>validation fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1659</li>
+  <li>20240509 setupchecklist by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1660</li>
+  <li>240506 drawers update by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1661</li>
+  <li>240506 drawers update by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1663</li>
+  <li>schedule google meet link for existing calendar invite. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1662</li>
+  <li>minor changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1664</li>
+  <li>google notifications bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1666</li>
+  <li>bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1667</li>
+  <li>product bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1668</li>
+  <li>validation changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1669</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1670</li>
+  <li>Used Serilog by @alexstromboli in https://github.com/payzlicorp/pos/pull/1671</li>
+  <li>Quote changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1665</li>
+  <li>Bug Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1672</li>
+  <li>20240515 virtualconsultation by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1673</li>
+  <li>merging master to qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1674</li>
+  <li>20240520 appointments by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1675</li>
+  <li>240506 drawers update by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1676</li>
+  <li>240506 drawers update by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1677</li>
+  <li>Update ‘qa’ by @alexstromboli in https://github.com/payzlicorp/pos/pull/1681</li>
+  <li>Tax Refactoring Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1680</li>
+  <li>Inventory_Management by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1679</li>
+  <li>Fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1678</li>
+  <li>migrations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1682</li>
+  <li>BugFixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1683</li>
+  <li>BugFixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1684</li>
+  <li>240506 drawers update by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1685</li>
+  <li>BugFixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1686</li>
+  <li>manage_stock by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1688</li>
+  <li>merge to qa branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1687</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1690</li>
+  <li>bugs by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1689</li>
+  <li>sales refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1691</li>
+  <li>20240521 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1692</li>
+  <li>20240521 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1693</li>
+  <li>bug fix, customer id can be null for a sale. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1696</li>
+  <li>Bugs by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1697</li>
+  <li>Delete_Profile_Picture by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1698</li>
+  <li>Refactoring Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1695</li>
+  <li>logging by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1700</li>
+  <li>240506 product setup list by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1701</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1703</li>
+  <li>corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1702</li>
+  <li>minor changes for set up by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1704</li>
+  <li>Ui Fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1699</li>
+  <li>Signalr fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1705</li>
+  <li>Fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1706</li>
+  <li>240506 product setup list by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1707</li>
+  <li>Update business_reviews_view.dart by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1694</li>
+  <li>240506 product setup list by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1708</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1709</li>
+  <li>240528 bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1710</li>
+  <li>changes for email and password validation by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1711</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1712</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1713</li>
+  <li>20240530 bugs by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1714</li>
+  <li>240506 product setup list by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1715</li>
+  <li>Changed Remember for 30 days text to Remember Me. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1716</li>
+  <li>Refactoring and Bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1717</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1718</li>
+  <li>bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1719</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1721</li>
+  <li>Public appointment and appointment tax corrections by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1720</li>
+  <li>240506 product setup list by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1722</li>
+  <li>signalr bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1723</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1724</li>
+  <li>240506 product setup list by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1725</li>
+  <li>bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1726</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1727</li>
+  <li>BugFix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1730</li>
+  <li>Model bug String to bool by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1729</li>
+  <li>240528 bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1728</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1731</li>
+  <li>Navigation changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1732</li>
+  <li>240506 product setup list by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1733</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1735</li>
+  <li>bug fix in dashboard by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1736</li>
+  <li>240506 product setup list by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1737</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1738</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1739</li>
+  <li>Qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1740</li>
+  <li>240528 bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1743</li>
+  <li>Pending State by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1742</li>
+  <li>240506 product setup list by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1741</li>
+  <li>Money_Owed_Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1746</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1748</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1749</li>
+  <li>correction appointment branch refactor by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1745</li>
+  <li>updated ums and unit test by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1750</li>
+  <li>Bugs by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1747</li>
+  <li>Logs by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1752</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1753</li>
+  <li>240528 bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1751</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1754</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1755</li>
+  <li>240528 bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1756</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1757</li>
+  <li>Bugs by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1758</li>
+  <li>profile picture change by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1759</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1760</li>
+  <li>Default Profile Picture by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1762</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1761</li>
+  <li>Default Profile Picture by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1763</li>
+  <li>time slot api bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1764</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1767</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1769</li>
+  <li>Binary Storage Scripts by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1765</li>
+  <li>Revert “Binary Storage Scripts” by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1770</li>
+  <li>Fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1772</li>
+  <li>merge qa to master branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1774</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1776</li>
+  <li>App size reduction by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1777</li>
+  <li>Revert “App size reduction” by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1779</li>
+  <li>240528 bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1780</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1781</li>
+  <li>240528 bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1782</li>
+  <li>Default_Cleanup by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1771</li>
+  <li>SignalR_Addn by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1790</li>
+  <li>Update binary_storage_deploy.yml by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1789</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1792</li>
+  <li>Transactions refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1775</li>
+  <li>[Frontend] Transaction flow changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1791</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1794</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1796</li>
+  <li>UTs &amp; Bugs by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1795</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1793</li>
+  <li>Qa by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1798</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1799</li>
+  <li>refactored code to add courosel video by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1803</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1802</li>
+  <li>Bugs_Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1801</li>
+  <li>bug fix by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1804</li>
+  <li>bug fix in migration by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1805</li>
+  <li>20240614 corvideo by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1806</li>
+  <li>made welcome carousel video API anonymous by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1808</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1807</li>
+  <li>bug fixes by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1809</li>
+  <li>merge qa to master branch by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1810</li>
+  <li>Welcome video and bug fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1811</li>
+  <li>Bugs_Fix by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1815</li>
+  <li>Fluent Validations and refactoring by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1814</li>
+  <li>coupon multiselection widget error by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1813</li>
+  <li>Bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1812</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1816</li>
+  <li>Dashboard refactoring changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1817</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1818</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1819</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1823</li>
+  <li>Fluent Validations, refactoring and bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1821</li>
+  <li>240506 drawers update by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1824</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1826</li>
+  <li>240304 app tour by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1825</li>
+  <li>Timeslot fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1820</li>
+  <li>Dashboard refactoring changes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1828</li>
+  <li>minor fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1829</li>
+  <li>drawers and bottom sheet corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1830</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1831</li>
+  <li>validations for search entities by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1834</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1833</li>
+  <li>240506 drawers update by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1832</li>
+  <li>POS Bank Cash Drawer implementation by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1836</li>
+  <li>code refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1744</li>
+  <li>naming changes etc. by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1837</li>
+  <li>folder structure changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1839</li>
+  <li>Added few usecases by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1841</li>
+  <li>missed changes for renaming by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1842</li>
+  <li>Package issue by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1843</li>
+  <li>Fixed app crash by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1844</li>
+  <li>Customers module code refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1850</li>
+  <li>customers module refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1851</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1849</li>
+  <li>240601 customers UI correections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1847</li>
+  <li>Dashboard_Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1845</li>
+  <li>240601 customers UI correections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1852</li>
+  <li>customers module refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1853</li>
+  <li>customers changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1854</li>
+  <li>bluetooth correction by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1857</li>
+  <li>Customer dashboard refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1856</li>
+  <li>implement employee images and tags by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1855</li>
+  <li>Refactoring and bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1858</li>
+  <li>Code clean up by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1860</li>
+  <li>New Appointment Flow Services Api and refactoring changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1848</li>
+  <li>Bug fixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1861</li>
+  <li>240601 customers UI correections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1864</li>
+  <li>minor changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1863</li>
+  <li>240601 customers UI correections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1865</li>
+  <li>minor changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1866</li>
+  <li>minor changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1867</li>
+  <li>Dashboard Conflict Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1869</li>
+  <li>refactoring by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1870</li>
+  <li>customer refactoring changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1871</li>
+  <li>240208 bug fixes prod beta by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1868</li>
+  <li>frontend code celan up by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1872</li>
+  <li>Refactoring by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1873</li>
+  <li>TransactionMode by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1827</li>
+  <li>240601 customers UI correections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1874</li>
+  <li>getUsers bug fix by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1875</li>
+  <li>240601 customers UI correections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1876</li>
+  <li>Customer_Dashboard_Refactoring by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1877</li>
+  <li>TestCaseCheck by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1878</li>
+  <li>Revert “TestCaseCheck” by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1879</li>
+  <li>communication sms and comments changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1881</li>
+  <li>New Appointment booking flow by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1882</li>
+  <li>migration script by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1883</li>
+  <li>Refactoring by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1885</li>
+  <li>240601 customers UI correections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1884</li>
+  <li>New Appointment Flow Refactoring Changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1886</li>
+  <li>corrections by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1887</li>
+  <li>sms changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1888</li>
+  <li>Public Appointment flow Apis and other refactoring changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1889</li>
+  <li>20240711 fr by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1890</li>
+  <li>240628 new appointment flow dev by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1891</li>
+  <li>New Appointment correction by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1892</li>
+  <li>240628 new appointment flow dev by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1893</li>
+  <li>communication controller refactored by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1894</li>
+  <li>240628 new appointment flow dev by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1895</li>
+  <li>Fluent validations by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1896</li>
+  <li>UnitTests by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1897</li>
+  <li>bug fix in utility.dart by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1898</li>
+  <li>bug fix for customers address by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1899</li>
+  <li>Customer_Dashboard_Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1901</li>
+  <li>Appoinments time slots optimization changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1900</li>
+  <li>get email fix and renaming of api service functions by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1902</li>
+  <li>240715 appointment details UI by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1903</li>
+  <li>Bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1904</li>
+  <li>bug fixes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1905</li>
+  <li>customers module bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1906</li>
+  <li>Blocktime issue by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1907</li>
+  <li>time slots optimization change by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1908</li>
+  <li>Elastic Data Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1909</li>
+  <li>customers module bug fixes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1910</li>
+  <li>Merge Sale Fixes by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1912</li>
+  <li>240628 new appointment flow dev by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1911</li>
+  <li>240715 appointment details UI by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1914</li>
+  <li>minor changes by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1913</li>
+  <li>240704 new appointment flow by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1917</li>
+  <li>20240711 fr by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1918</li>
+  <li>public flow changes by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1919</li>
+  <li>20240614 production bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1920</li>
+  <li>Boolean Responses by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1921</li>
+  <li>240717 new appointment flow bugs by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1922</li>
+  <li>240715 appointment details UI by @MandeepPayzli in https://github.com/payzlicorp/pos/pull/1923</li>
+  <li>Bugfixes by @rahulyoganand in https://github.com/payzlicorp/pos/pull/1924</li>
+  <li>Boolean Response by @sanjaytngd in https://github.com/payzlicorp/pos/pull/1925</li>
+  <li>bug fix by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1926</li>
+  <li>240717 new appointment flow bugs by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1927</li>
+  <li>merge qa to master by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1928</li>
+  <li>validation check by @nikhil-mannava in https://github.com/payzlicorp/pos/pull/1930</li>
+  <li>240717 new appointment flow bugs by @karthik-payzli in https://github.com/payzlicorp/pos/pull/1931</li>
+  <li>merge qa to master by @saikrishna-burra in https://github.com/payzlicorp/pos/pull/1932</li>
+</ul>
+
+<p><strong>Full Changelog</strong>: https://github.com/payzlicorp/pos/commits/rls_25</p>
