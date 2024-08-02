@@ -1,0 +1,212 @@
+<h2 id="included-in-release">Included in Release</h2>
+
+<p>This release focusses on a large number of fixes and enhancements across Payzli Connect modules such as support, residuals, risk and other modules.</p>
+
+<h2 id="connect-ui">Connect UI</h2>
+<p>### Users and Rights Screen:
+- The users and rights screens in connect are refreshed with better UI, clear visibility of roles and permissions and better organization of the profile section to display data more coherently
+- Precession changes:
+Fixed the standard precession logic for most sections to improve readability and reduce form filling errors</p>
+
+<h2 id="residuals">Residuals</h2>
+<p>### Jobs changes:
+- Added Auth and chargeback billing element residual calculation jobs
+- Jobs have been modified to get the data of merchants boarded through Esquire
+- Repay jobs have been corrected and getting data from both esquire and CBCal files
+- Residual jobs are now running daily to auto-populate reports
+- Fixed a major bug where the person’s name was taking priority over company name in partners 
+- The residual program and the sales partner onboarding flows have been integrated for completeness of the onboarding process</p>
+
+<h3 id="risk">Risk</h3>
+<ul>
+  <li>Revamped a few risk-rule’s logic from the OPs team’s feedback</li>
+  <li>Quashed a bug related which caused the risk section to crash sometimes and fixed the risk routes to the various pages under the risk section</li>
+  <li>Introduced the ability to assign a risk tier to a merchant on Connect</li>
+</ul>
+
+<h3 id="other-enhancements-and-fixes">Other enhancements and Fixes:</h3>
+<ul>
+  <li>All MIDs in our system are now encrypted to enhance our data security</li>
+  <li>Open partners are now visible in the partner dropdown</li>
+  <li>Kanban UI and cards UI fixes for the leads, partners and support screens</li>
+  <li>Auto password updates job for Experian for handling expired passwords automatically</li>
+  <li>User emails are now being validated from the UMS (User Management system) to improve our ability to check if a user email exists in our system or not</li>
+  <li>A bug related to creating partner account for existing users was not working earlier</li>
+</ul>
+
+<h3 id="quality-assurance">Quality Assurance:</h3>
+<ul>
+  <li>The QA team worked on adding more use cases on UI automation and working on the end to end testing automation flows</li>
+</ul>
+
+<h2 id="whats-changed">What’s Changed</h2>
+<ul>
+  <li>residual hierarchy filter bug by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2701</li>
+  <li>passing user_id in usesr history logs by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2702</li>
+  <li>decimal precision and leading zero changes and fixed share in partner leads by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2696</li>
+  <li>240304 module residuals by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2710</li>
+  <li>fix for user’s activity tracking by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2700</li>
+  <li>fixed multiple tabs restrict multiple login issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2712</li>
+  <li>Fixed residual bugs… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2713</li>
+  <li>240703 risk analysis cron dev by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2738</li>
+  <li>240527 adding phosphor icon and variables by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2571</li>
+  <li>Added deleted user login error message string by @BharathPzli in https://github.com/payzlicorp/connect/pull/2745</li>
+  <li>240709 merging qa to dev by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2749</li>
+  <li>Sending correct message on deleted user login by @keshavajmera in https://github.com/payzlicorp/connect/pull/2730</li>
+  <li>Residual Bugfixes - trelloId: uNraQUS1 by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2748</li>
+  <li>changed minimumIntegerDigits to 1 by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2750</li>
+  <li>revereting redirect logic to fix missed corner case by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2718</li>
+  <li>240304 module residuals by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2759</li>
+  <li>
+    <ul>
+      <li>fixed layouts in all modules by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2760</li>
+    </ul>
+  </li>
+  <li>240710 risk fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2762</li>
+  <li>240710 risk fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2763</li>
+  <li>Qa by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2764</li>
+  <li>Move common communication controller methods to a common class by @keshavajmera in https://github.com/payzlicorp/connect/pull/2758</li>
+  <li>Fixed Styling issues in support by @BharathPzli in https://github.com/payzlicorp/connect/pull/2757</li>
+  <li>Removed mid restriction for merchant profile bank details edit. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2769</li>
+  <li>hot fix for edit bank account by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2770</li>
+  <li>Fixed Pos logo issue and switching back from pos to connect issue. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2777</li>
+  <li>Register communication common routines class by @keshavajmera in https://github.com/payzlicorp/connect/pull/2768</li>
+  <li>merge master to dev by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2774</li>
+  <li>240712 risk refactor by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2771</li>
+  <li>240712 risk refactor by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2778</li>
+  <li>added missing add execution event by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2781</li>
+  <li>240716 fix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2782</li>
+  <li>240716 fix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2783</li>
+  <li>fixed null reference exception. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2784</li>
+  <li>240716 fix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2785</li>
+  <li>improved logging. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2786</li>
+  <li>240716 fix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2787</li>
+  <li>240716 fix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2788</li>
+  <li>added flex fees by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2716</li>
+  <li>240716 riskfix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2791</li>
+  <li>240716 riskfix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2792</li>
+  <li>Fixed Pos logo issue and switching back from pos to connect issue. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2793</li>
+  <li>20240712 reset pwd experian by @snehapayzli in https://github.com/payzlicorp/connect/pull/2779</li>
+  <li>20240619 underwriting api refactor by @snehapayzli in https://github.com/payzlicorp/connect/pull/2605</li>
+  <li>risk tier assignment by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2794</li>
+  <li>240711 users refactoring searchbar by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2780</li>
+  <li>
+    <ul>
+      <li>added risk tier in merchant profile &gt; merchant details section. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2776</li>
+    </ul>
+  </li>
+  <li>Fixed internal notes date field in support chat view by @BharathPzli in https://github.com/payzlicorp/connect/pull/2795</li>
+  <li>Internal Notes date fix by @keshavajmera in https://github.com/payzlicorp/connect/pull/2796</li>
+  <li>fixed wrong business details being fetched. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2797</li>
+  <li>240619 app template by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2733</li>
+  <li>commit partner boarding by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2798</li>
+  <li>20240717 repay error in update by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2800</li>
+  <li>added new table component fixed pagination by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2790</li>
+  <li>added logic for hardpull, processing pill, dropdown button, fixed css by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2775</li>
+  <li>Dev to qa underwriting apis - encrypt mid - experian pwd  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2801</li>
+  <li>play-store hotfix by @abhis-anand in https://github.com/payzlicorp/connect/pull/2802</li>
+  <li>20240709 underwriting kanband card by @hbhankhar in https://github.com/payzlicorp/connect/pull/2806</li>
+  <li>Kanban changes by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2808</li>
+  <li>DB connections issue fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/2809</li>
+  <li>dbproc connection termination issue underwriting job by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2810</li>
+  <li>240718 new roles and permissions by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2804</li>
+  <li>fixed risk requested changes by @hbhankhar in https://github.com/payzlicorp/connect/pull/2772</li>
+  <li>commit partner name changes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2811</li>
+  <li>240719 roles tab changes by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2812</li>
+  <li>Updated sales_hierarchy_id for sales partner to actual sales hierarch… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2819</li>
+  <li>
+    <ul>
+      <li>fixed partner leads click was not redirecting to partner leads in a… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2818</li>
+    </ul>
+  </li>
+  <li>Fix: comments sent datetime by @keshavajmera in https://github.com/payzlicorp/connect/pull/2815</li>
+  <li>commit procedure by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2822</li>
+  <li>support recipient changes by @snehapayzli in https://github.com/payzlicorp/connect/pull/2807</li>
+  <li>fixed kanban card also added partner card by @hbhankhar in https://github.com/payzlicorp/connect/pull/2823</li>
+  <li>Integrated modified paginated recipients list api in support editor by @BharathPzli in https://github.com/payzlicorp/connect/pull/2813</li>
+  <li>Removed the concept of members list for support cases by @BharathPzli in https://github.com/payzlicorp/connect/pull/2766</li>
+  <li>240718 login email by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2827</li>
+  <li>
+    <ul>
+      <li>fixed partner leads click was not redirecting to partner leads in a… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2816</li>
+    </ul>
+  </li>
+  <li>Updated sales_hierarchy_id for sales partner to actual sales hierarch… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2817</li>
+  <li>user info and teams created by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2829</li>
+  <li>240722 residual bugs by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2832</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2826</li>
+  <li>User permission categorization changes by @snehapayzli in https://github.com/payzlicorp/connect/pull/2828</li>
+  <li>Added Permission Category Group  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2834</li>
+  <li>Adding type to migration by @snehapayzli in https://github.com/payzlicorp/connect/pull/2835</li>
+  <li>migration fixes by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2836</li>
+  <li>240721 basic info and teams by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2838</li>
+  <li>Create date issue fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/2841</li>
+  <li>added fix for for tracking users activity by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2842</li>
+  <li>20240725 users history log fix by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2839</li>
+  <li>User history, role name styling by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2843</li>
+  <li>Recipient list load fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/2845</li>
+  <li>commit mid save and leads check key by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2833</li>
+  <li>240725 bugfixes by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2844</li>
+  <li>passing correct partner_id to get_sales_hierarchy function call by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2846</li>
+  <li>fixed the history log issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2848</li>
+  <li>Added error handling for invalid check key when merchant clicks on invalid key link on mail by @BharathPzli in https://github.com/payzlicorp/connect/pull/2837</li>
+  <li>
+    <ul>
+      <li>integrated new residual program design and integrated apis. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2847</li>
+    </ul>
+  </li>
+  <li>attachment fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/2850</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2851</li>
+  <li>Refactor Jobs by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2821</li>
+  <li>Dev by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2855</li>
+  <li>change assignee added in kanban card by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2853</li>
+  <li>commit inner exception for approve by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2856</li>
+  <li>Kanban ui fixes  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2857</li>
+  <li>240722 risk refactor dev by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2860</li>
+  <li>preventing page navigation by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2858</li>
+  <li>240722 risk refactor by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2861</li>
+  <li>bug fix residual reports by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2862</li>
+  <li>240726 kanban UI fixes cherrypick on qa by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2865</li>
+  <li>added clear icon in textsearch and made it conditionally visible by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2863</li>
+  <li>240718 login email by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2867</li>
+  <li>fixed add member to team flow by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2870</li>
+  <li>MID generation issue by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2871</li>
+  <li>visibility bug fix by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2872</li>
+  <li>added dispose for file storage and rule storage service. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2873</li>
+  <li>added dispose for file storage and rule storage service. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2874</li>
+  <li>added dispose for file storage and rule storage service. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2875</li>
+  <li>240729 user rights UI fixes by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2876</li>
+  <li>Null check handle for sms contacts by @snehapayzli in https://github.com/payzlicorp/connect/pull/2880</li>
+  <li>Organization id fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/2877</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2881</li>
+  <li>240722 risk refactor dev by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2879</li>
+  <li>
+    <ul>
+      <li>fixed breadcrumbs in merchant &gt; transactions page. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2883</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>fixed breadcrumbs in merchant &gt; transactions page. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/2884</li>
+    </ul>
+  </li>
+  <li>Fixed support prod reported issues by @BharathPzli in https://github.com/payzlicorp/connect/pull/2885</li>
+  <li>240725 risk rule delete fix dev by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2889</li>
+  <li>240725 risk rule delete fix qa by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2890</li>
+  <li>added for stamping. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2891</li>
+  <li>authorization residuals job by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2892</li>
+  <li>prevening event propagation when clicking on action button in userspage by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2893</li>
+  <li>20240731 risk delete member bug by @hbhankhar in https://github.com/payzlicorp/connect/pull/2886</li>
+  <li>240722 risk refactor qa by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2895</li>
+  <li>20240731 risk delete member bug qa by @hbhankhar in https://github.com/payzlicorp/connect/pull/2894</li>
+  <li>Fixed support module bugs by @BharathPzli in https://github.com/payzlicorp/connect/pull/2897</li>
+  <li>added merchant emails by @snehapayzli in https://github.com/payzlicorp/connect/pull/2888</li>
+  <li>Support members list by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2899</li>
+  <li>Restrict merchant from updating support case status by @BharathPzli in https://github.com/payzlicorp/connect/pull/2900</li>
+  <li>240801 risk quick f ix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2902</li>
+  <li>added required migration text. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2903</li>
+  <li>v6.3.1 by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2904</li>
+  <li>added soft delete for risk analsysis rules. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2840</li>
+</ul>
+
+<p><strong>Full Changelog</strong>: https://github.com/payzlicorp/connect/compare/rls_45…rls_47</p>
