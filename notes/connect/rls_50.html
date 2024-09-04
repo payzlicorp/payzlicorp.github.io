@@ -1,0 +1,328 @@
+<h2 id="included-in-release">Included in Release</h2>
+
+<p>This release focuses on many fixes and enhancements across Payzli Connect modules such as partner, support, residuals, risk and other modules.</p>
+
+<h2 id="dashboards">Dashboards</h2>
+<ul>
+  <li>Partner Dashboards enabled for specific users</li>
+</ul>
+
+<h2 id="residuals">Residuals</h2>
+<ul>
+  <li>Esquire merchant statement job is created.</li>
+  <li>Transaction &amp; Activities page does not load data and appears to be empty is fixed.</li>
+  <li>Renamed Transaction and Activities to Activities</li>
+  <li>Bug Fixes:</li>
+  <li>Date format corrected for -
+    <ul>
+      <li>Report summary</li>
+      <li>Billing element tab</li>
+      <li>Detail tab</li>
+      <li>Merchant tab</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="risk">Risk</h2>
+<ul>
+  <li>Route fixes for Triage and Investigation pages.</li>
+</ul>
+
+<h2 id="multi-merchant---multi-location-support-for-merchant-accounts">Multi Merchant - Multi-Location Support for Merchant Accounts</h2>
+<p>Support for multiple merchant locations under a hierarchy. During lead creation, users can add new locations to existing chains or create new ones. Merchant profiles will show multiple accounts for easy switching. Users can search for existing organizations and add new locations to them. The multi-location flow starts when a new merchant lead is created, allowing seamless integration and management of multiple locations. Users can link and delink locations, and toggle between them to access specific information.
+This update enhances multi-location management.</p>
+
+<h2 id="enhancement">Enhancement</h2>
+<ul>
+  <li>PDF fields have been improved to accommodate auto wrap feature for text.</li>
+  <li>New permission Manage Attachments (inside Lead Management) is introduced, whoever have this permission can now add attachments irrespective of the account state.</li>
+  <li>Risk, Underwriter and admin roles will see underwriting tab even after account moves to open state</li>
+</ul>
+
+<h2 id="partner-bug-fixes">Partner Bug Fixes:</h2>
+<ul>
+  <li>Sales partner profile not opening through search has been fixed.</li>
+  <li>Hierarchy id issue while creating partner is fixed.</li>
+  <li>Organization name will not be changed now when a new user is added.</li>
+</ul>
+
+<h2 id="support">Support</h2>
+<ul>
+  <li>
+    <p>Merchant account has been handled in terms of permissions -</p>
+  </li>
+  <li>SMS, Internal Notes is limited to partner and internal employees.</li>
+  <li>If a merchant email address is added into the support case recipient list, then that case is accessible to merchant.</li>
+  <li>
+    <p>Recipient list modified to include merchant and partner mail addresses.</p>
+  </li>
+  <li>UI Fixes -
+    <ul>
+      <li>Text field expander</li>
+      <li>Time stamp for notes</li>
+      <li>Case details button style</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="users-and-rights">Users And Rights</h2>
+
+<ul>
+  <li>Permissions have been grouped now under categories.</li>
+  <li>UI enhancements to provide elevated user experience.</li>
+  <li>User history log enhancements to track user activities throughout.</li>
+</ul>
+
+<h2 id="user-login">User Login</h2>
+<ul>
+  <li>Email verification causing interruptions in logins has been improved.</li>
+  <li>Equipment categories population failure in signup flow which caused hiccups is fixed.</li>
+  <li>Login api integration was missing post confirmation flow, it is handled now.</li>
+</ul>
+
+<h2 id="other-enhancements-and-fixes">Other enhancements and Fixes:</h2>
+<ul>
+  <li>Fixed the bug leading to failures while closing an account.</li>
+  <li>Comment screen disappearing for accounts if fixed now.</li>
+  <li>Repay failures have been handled internally to ensure smooth functionality.</li>
+  <li>Convert to Physical app option has been added back in kanban view.</li>
+  <li>2FA report generation time has been fixed.</li>
+  <li>Empty spaces being shown in Members dropdown has been fixed.</li>
+  <li>Search will now be reset once you come back to merchant screen from visited merchant through global search.</li>
+  <li>Industry display name is changed to Nail Salon.</li>
+  <li>Kanban related UI enhancements have been pushed to provide better user experience.</li>
+  <li>Data precision improvements have been made.</li>
+  <li>Express XML certificates have been renewed.</li>
+  <li>Transaction &amp; Activities page does not load data and appears to be empty is fixed.</li>
+  <li>Underwriting Manager facing issues to edit profile data is fixed.</li>
+</ul>
+
+<h2 id="quality-assurance">Quality Assurance:</h2>
+<ul>
+  <li>The QA team worked on adding more use cases on UI automation and working on the end-to-end testing automation flows</li>
+</ul>
+
+<h2 id="known-issues-and-limitations">Known Issues and Limitations</h2>
+<ul>
+  <li>Merchant will only be able to see support case when added as a recipient or replied to thread from connect portal.</li>
+  <li>For already created partner accounts, where sales experience wasn’t selected will show empty.</li>
+  <li>For Admin, to view all the support cases you need to navigate to Support Module. They will have access to all the cases there.</li>
+</ul>
+
+<h2 id="whats-changed">What’s Changed</h2>
+<ul>
+  <li>Sign in and Forgot password design system by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2820</li>
+  <li>Updated refactor login pop up by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2830</li>
+  <li>20240724 pwa refactor app template by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2852</li>
+  <li>240205 pwa navigation by @rkzofficial in https://github.com/payzlicorp/connect/pull/2859</li>
+  <li>20240729 pwa leads table refactor by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2866</li>
+  <li>Revert 2866 20240729 pwa leads table refactor by @abhis-anand in https://github.com/payzlicorp/connect/pull/2868</li>
+  <li>20240730 pwa lead table refactor v1 by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2869</li>
+  <li>20240730 pwa refactor digital app by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2882</li>
+  <li>240205 pwa drawers by @rkzofficial in https://github.com/payzlicorp/connect/pull/2898</li>
+  <li>240801 risk quick f ix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2901</li>
+  <li>20240731 pwa add lead refactor by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2896</li>
+  <li>240802 bugfixes appbar by @rkzofficial in https://github.com/payzlicorp/connect/pull/2907</li>
+  <li>20240802 pwa refactor bug by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2908</li>
+  <li>20240802 pwa refactor validations Digital App by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2909</li>
+  <li>update code effects to use full licensed version. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2906</li>
+  <li>240802 codeeffects license by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2910</li>
+  <li>240805 pwa design fixes by @rkzofficial in https://github.com/payzlicorp/connect/pull/2911</li>
+  <li>Multi merchant changes by @keshavajmera in https://github.com/payzlicorp/connect/pull/2789</li>
+  <li>fixed global search issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2905</li>
+  <li>240806 fix extract data by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2913</li>
+  <li>fixed issue with extracting data for rule execution data. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2914</li>
+  <li>20240805 pwa add lead validation refactor by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2915</li>
+  <li>Minor changes in UI by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2916</li>
+  <li>20240806 pwa added padding checkbox by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2919</li>
+  <li>240806 pwa ds UI fixes by @rkzofficial in https://github.com/payzlicorp/connect/pull/2917</li>
+  <li>240806 pwa ds UI fixes by @rkzofficial in https://github.com/payzlicorp/connect/pull/2922</li>
+  <li>20240807 pwa create app template bug by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2923</li>
+  <li>Update Program.cs by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2924</li>
+  <li>240808 pwa padding fixes by @rkzofficial in https://github.com/payzlicorp/connect/pull/2925</li>
+  <li>20240808 pwa sales drop add lead by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2927</li>
+  <li>Revert “20240808 pwa sales drop add lead” by @abhis-anand in https://github.com/payzlicorp/connect/pull/2928</li>
+  <li>Revert “240808 pwa padding fixes” by @abhis-anand in https://github.com/payzlicorp/connect/pull/2929</li>
+  <li>20240808 pwa sales drop add lead by @abhis-anand in https://github.com/payzlicorp/connect/pull/2930</li>
+  <li>240808 pwa padding fixes by @rkzofficial in https://github.com/payzlicorp/connect/pull/2931</li>
+  <li>handled conversion for nullable types. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2926</li>
+  <li>Modified code for template by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2933</li>
+  <li>240808 pwa scrollfix by @rkzofficial in https://github.com/payzlicorp/connect/pull/2934</li>
+  <li>changes for cp and flatrates by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2878</li>
+  <li>Support case visibility implementation based on email threads by @snehapayzli in https://github.com/payzlicorp/connect/pull/2912</li>
+  <li>made clickhouse connections disposable everywhere. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2935</li>
+  <li>Master dev by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2936</li>
+  <li>changed permission to run manual cron. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2937</li>
+  <li>240809 change permission dev by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2938</li>
+  <li>kanban card date formatting fixed by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2932</li>
+  <li>fixing the issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2918</li>
+  <li>Merchant profile refactor by @keshavajmera in https://github.com/payzlicorp/connect/pull/2660</li>
+  <li>240724 multi merchant changes UI by @BharathPzli in https://github.com/payzlicorp/connect/pull/2920</li>
+  <li>20240809 pwa dependency field issue by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2940</li>
+  <li>240812 pwa bugfixes app templates by @rkzofficial in https://github.com/payzlicorp/connect/pull/2943</li>
+  <li>20240812 pwa search loading fixed by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2946</li>
+  <li>Updated mask flex fee by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2947</li>
+  <li>20240813 risk invesetigation data qa by @hbhankhar in https://github.com/payzlicorp/connect/pull/2949</li>
+  <li>updating useeffect dependency by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2945</li>
+  <li>fixed app template and template details css by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2950</li>
+  <li>chore: Update leads table after modifying assigned_to_drawer, members… by @rkzofficial in https://github.com/payzlicorp/connect/pull/2951</li>
+  <li>20240813 pwa bug app template by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2952</li>
+  <li>Attach Audit Report to final agreement by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2953</li>
+  <li>Attach Audit Report to final agreement by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2954</li>
+  <li>Include closed accounts in the location view - multi merchant by @keshavajmera in https://github.com/payzlicorp/connect/pull/2944</li>
+  <li>20240813 pwa accountvalidation by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2957</li>
+  <li>Qa by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2958</li>
+  <li>240814 pwa dropdown equality fix and other bug fixes by @rkzofficial in https://github.com/payzlicorp/connect/pull/2961</li>
+  <li>Updated Equipment Section by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2959</li>
+  <li>240814 pwa address fields fix by @rkzofficial in https://github.com/payzlicorp/connect/pull/2962</li>
+  <li>240814 bugfix by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2960</li>
+  <li>equipments not showing up issue fixed by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2956</li>
+  <li>fixed add new attachment permission by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2948</li>
+  <li>20240808 risk fix investigation and execution data by @hbhankhar in https://github.com/payzlicorp/connect/pull/2942</li>
+  <li>refactor: Improve date parsing in DatePickerTextField by @rkzofficial in https://github.com/payzlicorp/connect/pull/2963</li>
+  <li>20240814 pwa refund validation fields by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2964</li>
+  <li>using defaults for txn auth fee by @keshavajmera in https://github.com/payzlicorp/connect/pull/2966</li>
+  <li>Meta details permission fix by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2955</li>
+  <li>fix for get quipment api: if partner selects equipment then those wil… by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/2941</li>
+  <li>Pwa qa by @abhis-anand in https://github.com/payzlicorp/connect/pull/2965</li>
+  <li>new manage attachments permission integrated  by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2970</li>
+  <li>adding missing translations in en.json file by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2969</li>
+  <li>240816 small fix dev by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2975</li>
+  <li>240816 small fix by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2972</li>
+  <li>240816 pwa flexible wrap business layout by @rkzofficial in https://github.com/payzlicorp/connect/pull/2973</li>
+  <li>20240815 pwa additional owner mobile by @Sumanta2020 in https://github.com/payzlicorp/connect/pull/2976</li>
+  <li>240616 qa merge by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2978</li>
+  <li>handled condition for delete rule in get_rule. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2983</li>
+  <li>commit manage attachments Permission by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2981</li>
+  <li>240703 add flex fees by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2967</li>
+  <li>240820 base text input fix by @abhis-anand in https://github.com/payzlicorp/connect/pull/2987</li>
+  <li>Pwa dev by @abhis-anand in https://github.com/payzlicorp/connect/pull/2988</li>
+  <li>master to qa by @nikhil-negi in https://github.com/payzlicorp/connect/pull/2984</li>
+  <li>hiding close button if user doesn’t have permission by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2989</li>
+  <li>commit default page for approve partner by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2986</li>
+  <li>240814 multi merchant updated changes UI by @BharathPzli in https://github.com/payzlicorp/connect/pull/2990</li>
+  <li>Pwa qa by @abhis-anand in https://github.com/payzlicorp/connect/pull/2979</li>
+  <li>passing merchant_account_id to AddSelectBusiness compoennt so that co… by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2991</li>
+  <li>Partner mail recipient fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/2994</li>
+  <li>Disable HQ account if child locations contact is not added in HQ account and child location contact has logged in  by @keshavajmera in https://github.com/payzlicorp/connect/pull/2971</li>
+  <li>fixed date time parse issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2995</li>
+  <li>240806 partner dashboard by @RevanthDodla in https://github.com/payzlicorp/connect/pull/2992</li>
+  <li>Pwa dev by @abhis-anand in https://github.com/payzlicorp/connect/pull/3000</li>
+  <li>chore: Update pubspec.yaml.template with design_system dependency by @abhis-anand in https://github.com/payzlicorp/connect/pull/3005</li>
+  <li>Auto text fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/2997</li>
+  <li>Pwa dev by @abhis-anand in https://github.com/payzlicorp/connect/pull/3009</li>
+  <li>Pwa qa by @abhis-anand in https://github.com/payzlicorp/connect/pull/3002</li>
+  <li>added check to only push in dictionary if its not already there. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3010</li>
+  <li>Commets created date null handling by @keshavajmera in https://github.com/payzlicorp/connect/pull/3004</li>
+  <li>master to dev - google address - pdf text fix by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3012</li>
+  <li>commit hierarchy restriction changes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3006</li>
+  <li>fixed transaction page for risk by @hbhankhar in https://github.com/payzlicorp/connect/pull/3011</li>
+  <li>active support tickets by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3017</li>
+  <li>partner path , dates by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3018</li>
+  <li>fixed the issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/2998</li>
+  <li>update total count by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3019</li>
+  <li>added organization name in profile by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3020</li>
+  <li>Restricted user from selecting 4th level partner hierarchy when creating a partner lead by @BharathPzli in https://github.com/payzlicorp/connect/pull/3015</li>
+  <li>fixed transaction page for risk by @hbhankhar in https://github.com/payzlicorp/connect/pull/3014</li>
+  <li>Closing Merchant Account by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2921</li>
+  <li>Audit logs for support communication by @keshavajmera in https://github.com/payzlicorp/connect/pull/3016</li>
+  <li>240710 repay default fees update by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2985</li>
+  <li>passing merchant_account_id to AddSelectBusiness compoennt so that co… by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3027</li>
+  <li>getting merchant_id from cookie by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3026</li>
+  <li>hiding buttons according to correct permission by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3022</li>
+  <li>getting merchant_id from cookie by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3025</li>
+  <li>240807 analytics UI dev by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3030</li>
+  <li>fixed equipment info permission issue by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3031</li>
+  <li>fixed partner assignment send &gt; create residual program &amp; hierarchy s… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3032</li>
+  <li>Fix: merchant corp search by @keshavajmera in https://github.com/payzlicorp/connect/pull/3029</li>
+  <li>fixed signalr methods for calling different apis on same topic. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3034</li>
+  <li>240821 biometrics by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3023</li>
+  <li>link ums account while leads signup by @keshavajmera in https://github.com/payzlicorp/connect/pull/3013</li>
+  <li>Multi merchant, merchant profile, Repay updates by @snehalpayzli in https://github.com/payzlicorp/connect/pull/2939</li>
+  <li>240807 analytics UI by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3021</li>
+  <li>Fixed few multi merchant bugs in UI by @BharathPzli in https://github.com/payzlicorp/connect/pull/3037</li>
+  <li>Merchant location search with dba/corp name by @keshavajmera in https://github.com/payzlicorp/connect/pull/3035</li>
+  <li>changed mcc description by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3043</li>
+  <li>support and sms status by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3042</li>
+  <li>20240823 risk transaction history by @hbhankhar in https://github.com/payzlicorp/connect/pull/3038</li>
+  <li>multi merchant bug fixes by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3040</li>
+  <li>adding loader for equipment categories by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3041</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3044</li>
+  <li>240806 partner dashboard by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3045</li>
+  <li>sortcode update in repay by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3046</li>
+  <li>Fixed corp name validation bug in add lead slide out by @BharathPzli in https://github.com/payzlicorp/connect/pull/3048</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3049</li>
+  <li>
+    <ul>
+      <li>removed default landing page setting from profile for partners and … by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3051</li>
+    </ul>
+  </li>
+  <li>Fixed detach merchant popup merchant account names by @BharathPzli in https://github.com/payzlicorp/connect/pull/3050</li>
+  <li>
+    <ul>
+      <li>removed default landing page setting from profile for partners and … by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3052</li>
+    </ul>
+  </li>
+  <li>added check for type of file that can be uploaded. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3053</li>
+  <li>added check for type of file that can be uploaded. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3054</li>
+  <li>20240823 risk transaction page qa by @hbhankhar in https://github.com/payzlicorp/connect/pull/3039</li>
+  <li>Email field text fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/3055</li>
+  <li>refreshing page after closing merchant account by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3056</li>
+  <li>20240829 email field fix by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3058</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3059</li>
+  <li>Integrated confirmation link login api to link merchant account to existing ums account by @BharathPzli in https://github.com/payzlicorp/connect/pull/3057</li>
+  <li>Fixed error handling and api payload for confirmation link login by @BharathPzli in https://github.com/payzlicorp/connect/pull/3061</li>
+  <li>partner docs by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3068</li>
+  <li>Upload attachment issue fix by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3069</li>
+  <li>handing key expiration, back navigation by @keshavajmera in https://github.com/payzlicorp/connect/pull/3064</li>
+  <li>240830 auth rule by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3066</li>
+  <li>240830 auth rule by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3067</li>
+  <li>Invalid password - integrated login api  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3060</li>
+  <li>sortcode update by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3070</li>
+  <li>Update sort code in repay by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3071</li>
+  <li>partner constants for non exclusive by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3074</li>
+  <li>hotfix for : repay token is expired in 8600sec and never refreshed in… by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3077</li>
+  <li>Merge qa by @keshavajmera in https://github.com/payzlicorp/connect/pull/3076</li>
+  <li>Adding address data for locations by @keshavajmera in https://github.com/payzlicorp/connect/pull/3072</li>
+  <li>Added address column and fixed auth rep column ui issue by @BharathPzli in https://github.com/payzlicorp/connect/pull/3078</li>
+  <li>Added debouncing logic in dynamic Select component with 300ms delay by @BharathPzli in https://github.com/payzlicorp/connect/pull/3079</li>
+  <li>added zip and txt in allowed upload file types, also showing exact er… by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3062</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3080</li>
+  <li>in biosheet and infosheet of partner, getting partner-id from params … by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3075</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3081</li>
+  <li>Fixed few multi merchant bugs by @BharathPzli in https://github.com/payzlicorp/connect/pull/3083</li>
+  <li>
+    <ul>
+      <li>Fixed: Transaction and Activities Default filters by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3084</li>
+    </ul>
+  </li>
+  <li>fixed experience enum changes iseu by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3085</li>
+  <li>
+    <ul>
+      <li>Disabled default redirection to dashboard page for partner. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3086</li>
+    </ul>
+  </li>
+  <li>commit partner exp changes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3082</li>
+  <li>Multi merchant and partner sales experience changes by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3087</li>
+  <li>fixed txt missing txt in upload_filetype_error translation text by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3089</li>
+  <li>fix for tsys board by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3088</li>
+  <li>File Type error message update  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3090</li>
+  <li>240902 merchant support bugfix by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3091</li>
+  <li>Add new support showing all merchant accounts for merchant login  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3092</li>
+  <li>Null condition handling by @keshavajmera in https://github.com/payzlicorp/connect/pull/3093</li>
+  <li>QA:Null condition handling by @keshavajmera in https://github.com/payzlicorp/connect/pull/3094</li>
+  <li>Fixed header nav items inconsistency for sandbox merchant login by @BharathPzli in https://github.com/payzlicorp/connect/pull/3095</li>
+  <li>Hide headers in sandbox mode by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3098</li>
+  <li>Extra logs added by @snehapayzli in https://github.com/payzlicorp/connect/pull/3096</li>
+  <li>logs for Experian job by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3099</li>
+  <li>PR review comments addressed by @snehapayzli in https://github.com/payzlicorp/connect/pull/3100</li>
+  <li>added password reset logs by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3101</li>
+  <li>Fixed sandbox login header nav items bug by @BharathPzli in https://github.com/payzlicorp/connect/pull/3102</li>
+  <li>Fixes for sandbox login header  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3103</li>
+  <li>Release v6.4 by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3104</li>
+  <li>Fixed indefinite rendering of header component by @BharathPzli in https://github.com/payzlicorp/connect/pull/3105</li>
+  <li>global search bar visiblity by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3106</li>
+  <li>global search bar visibility issue fix by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3107</li>
+</ul>
+
+<p><strong>Full Changelog</strong>: https://github.com/payzlicorp/connect/compare/rls_47…rls_50</p>
