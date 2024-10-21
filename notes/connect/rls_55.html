@@ -1,0 +1,136 @@
+<h2 id="included-in-release">Included in Release</h2>
+
+<ul>
+  <li>New merchant profile screen and onboarding flow experience are introduced.</li>
+  <li>Pos to connect step up flow integration and creating support ticket for deployments</li>
+  <li>Residual Program screen bug fixes</li>
+  <li>Merchant Account Status Fix: Resolved an issue where the Merchant Account’s status in the application was not being marked as completed after eSign. Direct email sends through Adobe (third-party) have been turned off. The email functionality for eSign will now only work under Connect.</li>
+  <li>Support Cases Visibility: Added the ability to view Support Cases created by merchants, or when merchants are added to the recipients list, on the Merchant Profile page.</li>
+  <li>Repay Errors: Addressed issues related to Repay errors.</li>
+  <li>Sprint Bug Log 3: Updates to the Sprint Bug Log.</li>
+  <li>Deleted Merchant Lead Visibility: If a lead is deleted from the system, it will now be completely removed from visibility for all users to avoid confusion.</li>
+  <li>Bug – Additional Owner Issue: Fixed an issue when adding a second owner. When an account is in Lead status, entering additional owners sometimes resulted in the system redirecting the user to the “Authorized Representative” field when interacting with the “Search Address” field for Additional Owner 1.</li>
+</ul>
+
+<h2 id="known-issues">Known Issues</h2>
+
+<p>SMS Functionality: SMS is currently not functioning for sending Merchant Applications or Support cases. This is a work in progress and is dependent on the SMS service provider.</p>
+
+<p>Visa Partial Boarding Approve Button: The approve button is disappearing in Visa partial boarding. A temporary workaround involves setting the responsible flag value to “false.” This workaround will be necessary until the issue is fixed.</p>
+
+<p>Adobe eSign Error: Adobe is returning the error: {“code”:”AGREEMENT_NOT_EXPOSED”,”message”:”The agreement has not yet been exposed to the requested participant”}. This is a known intermittent issue for eSigning documents in this release.</p>
+
+<h2 id="whats-changed">What’s Changed</h2>
+<ul>
+  <li>commit hierarchy procs by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3138</li>
+  <li>240907 email case insensitive by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3144</li>
+  <li>240909 session expiry by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3140</li>
+  <li>Merge branch ‘qa’ into 240907_email_case_insensitive by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3152</li>
+  <li>240912 add estimation badge by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3166</li>
+  <li>Added search and sort in loacations tab multi merchant by @BharathPzli in https://github.com/payzlicorp/connect/pull/3161</li>
+  <li>Prefilling login/register email field with auth rep email in digital conversion flow by @BharathPzli in https://github.com/payzlicorp/connect/pull/3133</li>
+  <li>commit ms office filter by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3164</li>
+  <li>Address city of organisations on login screen by @keshavajmera in https://github.com/payzlicorp/connect/pull/3156</li>
+  <li>240915 bugfix by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3186</li>
+  <li>added merchant selection popup for txn vol &amp; bolt residuals graphs by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3183</li>
+  <li>240910 unprocessed transactions by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3191</li>
+  <li>20240818 merchant onboarding aryan by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3033</li>
+  <li>20240712 merchant onboarding layout by @hbhankhar in https://github.com/payzlicorp/connect/pull/2864</li>
+  <li>removd add organizatio option and made dropdown a simple button by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3197</li>
+  <li>
+    <ul>
+      <li>added a new tab Unprocessed in merchant activities for unprocessed … by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3176</li>
+    </ul>
+  </li>
+  <li>Null checks handled for Lendflow refetch by @snehapayzli in https://github.com/payzlicorp/connect/pull/3193</li>
+  <li>Login and forgot password error handling for rate limiting by @BharathPzli in https://github.com/payzlicorp/connect/pull/3201</li>
+  <li>Support case visibility for internal employees by @keshavajmera in https://github.com/payzlicorp/connect/pull/3190</li>
+  <li>able to compelte physical convert by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3204</li>
+  <li>History log and Linking Open accounts as location to a HQ by @keshavajmera in https://github.com/payzlicorp/connect/pull/3196</li>
+  <li>History log for multi section update by @keshavajmera in https://github.com/payzlicorp/connect/pull/3194</li>
+  <li>close merchant account issue fix by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3202</li>
+  <li>20240818 merchant onboarding aryan by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3206</li>
+  <li>20240918 user account creation by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3205</li>
+  <li>hotfix for email body by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3221</li>
+  <li>error message for inactive sales partner changed by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3219</li>
+  <li>240926 disable partner fix by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3224</li>
+  <li>TrelloId: https://trello.com/c/d4MKIxun by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3226</li>
+  <li>20240818 merchant onboarding aryan by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3214</li>
+  <li>issue fix for partner account naming issue by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3233</li>
+  <li>euipments allowed selection  by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/2980</li>
+  <li>240917 equipment changes UI by @BharathPzli in https://github.com/payzlicorp/connect/pull/3203</li>
+  <li>
+    <ul>
+      <li>fixed unprocessed transactions summary not visible issue. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3246</li>
+    </ul>
+  </li>
+  <li>Deployment swimlane UI intermediate changes by @BharathPzli in https://github.com/payzlicorp/connect/pull/3097</li>
+  <li>commit hierarchy fixes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3213</li>
+  <li>241002 QA to Dev - tsys discover close, swagger, transaction by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3239</li>
+  <li>241007 unprocessed by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3257</li>
+  <li>merchant dashboard view mode by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3230</li>
+  <li>Added few bugfixes in step up flow by @BharathPzli in https://github.com/payzlicorp/connect/pull/3252</li>
+  <li>20240818 merchant onboarding aryan by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3266</li>
+  <li>Step Up FLow by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3263</li>
+  <li>Dev to QA by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3267</li>
+  <li>Qa to dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3268</li>
+  <li>Hotfix Residual Program percentage billing input decimal places 2 to 3. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3269</li>
+  <li>241010 fix unprocessed job by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3273</li>
+  <li>241010 fix unprocessed job by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3274</li>
+  <li>241010 fix unprocessed job by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3275</li>
+  <li>lookup values by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3271</li>
+  <li>Look up by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3276</li>
+  <li>241010 mcc code 5723 by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3277</li>
+  <li>20241004 null ref exep fix by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3250</li>
+  <li>step flow - equipment images  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3278</li>
+  <li>20240818 merchant onboarding aryan by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3270</li>
+  <li>Merchant profile permission issue fix by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3281</li>
+  <li>Support changes for shipping pos equipments by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3284</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3285</li>
+  <li>fixed overflowint address label class by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3283</li>
+  <li>commit history log for pos approve by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3286</li>
+  <li>add logs by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3287</li>
+  <li>Manually changed pwd handling by @snehapayzli in https://github.com/payzlicorp/connect/pull/3272</li>
+  <li>Experian manual pwd update api by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3288</li>
+  <li>240924 deployment swimlane new by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3289</li>
+  <li>step flow update flex fee fix  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3290</li>
+  <li>Fixed flex fee getting overridden issue when pricing profile is updated by @BharathPzli in https://github.com/payzlicorp/connect/pull/3291</li>
+  <li>error handling in udate pos subscription by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3292</li>
+  <li>step flow fixes by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3293</li>
+  <li>commit adding transact equipment by default by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3294</li>
+  <li>240924 deployment swimlane new by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3297</li>
+  <li>step flow add payzli transact gateway by default in equipment list by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3295</li>
+  <li>Setting refund policy enum by @keshavajmera in https://github.com/payzlicorp/connect/pull/3298</li>
+  <li>fix for unhandeled null reference exception in catch block by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3300</li>
+  <li>commit business email changes by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3302</li>
+  <li>20240818 merchant onboarding aryan by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3299</li>
+  <li>Master : Merge ISV changes to master by @keshavajmera in https://github.com/payzlicorp/connect/pull/3301</li>
+  <li>ISV ddl changes  by @keshavajmera in https://github.com/payzlicorp/connect/pull/3306</li>
+  <li>241016 small fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3304</li>
+  <li>Using swagger attribute from common by @keshavajmera in https://github.com/payzlicorp/connect/pull/3307</li>
+  <li>Step flow BusinessEmail by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3308</li>
+  <li>residual hot fixes by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3311</li>
+  <li>Hotfix: Fixed pagination issue in residual programs list. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3312</li>
+  <li>commit address formating in mail by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3313</li>
+  <li>20240818 merchant onboarding aryan by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3309</li>
+  <li>AsignTo list fix for support by @snehapayzli in https://github.com/payzlicorp/connect/pull/3305</li>
+  <li>Comment added by @snehapayzli in https://github.com/payzlicorp/connect/pull/3314</li>
+  <li>make mcc 5723 as optblue_non_eligible by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3316</li>
+  <li>Merchant profile fixes  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3317</li>
+  <li>fixed processing profile, refund policy not saving or prepopulating i… by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3319</li>
+  <li>Merchant profile UI fixes by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3321</li>
+  <li>hotfix for creating new account with closed account merchant account- by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3318</li>
+  <li>Use closed merchant accounts email id by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3322</li>
+  <li>ISV changes related to UI and swagger  by @keshavajmera in https://github.com/payzlicorp/connect/pull/3234</li>
+  <li>ISV Swagger  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3323</li>
+  <li>fix for alphanumeric in repay equipment by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3325</li>
+  <li>Migration fix by @keshavajmera in https://github.com/payzlicorp/connect/pull/3326</li>
+  <li>20241018 merchant profile fixes by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3327</li>
+  <li>shipping address by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3330</li>
+  <li>241021 qa conflicts by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3332</li>
+  <li>merge master by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3331</li>
+  <li>connect 6.7.0 by @RevanthDodla in https://github.com/payzlicorp/connect/pull/3333</li>
+  <li>shipping address by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3329</li>
+</ul>
+
+<p><strong>Full Changelog</strong>: https://github.com/payzlicorp/connect/compare/rls_53…rls_55</p>
