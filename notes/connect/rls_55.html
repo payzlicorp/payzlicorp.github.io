@@ -1,24 +1,75 @@
-<h2 id="included-in-release">Included in Release</h2>
+<h1 id="included-in-this-release">Included in This Release</h1>
+
+<h2 id="merchant-profile">1. Merchant Profile</h2>
 
 <ul>
-  <li>New merchant profile screen and onboarding flow experience are introduced.</li>
-  <li>Pos to connect step up flow integration and creating support ticket for deployments</li>
-  <li>Residual Program screen bug fixes</li>
-  <li>Merchant Account Status Fix: Resolved an issue where the Merchant Account’s status in the application was not being marked as completed after eSign. Direct email sends through Adobe (third-party) have been turned off. The email functionality for eSign will now only work under Connect.</li>
-  <li>Support Cases Visibility: Added the ability to view Support Cases created by merchants, or when merchants are added to the recipients list, on the Merchant Profile page.</li>
-  <li>Repay Errors: Addressed issues related to Repay errors.</li>
-  <li>Sprint Bug Log 3: Updates to the Sprint Bug Log.</li>
-  <li>Deleted Merchant Lead Visibility: If a lead is deleted from the system, it will now be completely removed from visibility for all users to avoid confusion.</li>
-  <li>Bug – Additional Owner Issue: Fixed an issue when adding a second owner. When an account is in Lead status, entering additional owners sometimes resulted in the system redirecting the user to the “Authorized Representative” field when interacting with the “Search Address” field for Additional Owner 1.</li>
+  <li>
+    <p><strong>New Profile &amp; Onboarding Experience</strong>:<br />
+A revamped merchant profile screen and onboarding flow.</p>
+  </li>
+  <li><strong>Merchant Account Status Fix</strong>:<br />
+Resolved the issue where a Merchant Account’s status was not marked as completed post-eSign.
+    <ul>
+      <li>Direct emails sent through Adobe (third-party) have been turned off.</li>
+      <li>eSign emails will now only work within Connect.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Support Cases Visibility</strong>:<br />
+Added functionality to view support cases created by merchants or when merchants are added as recipients on the Merchant Profile page.</p>
+  </li>
+  <li><strong>Deleted Merchant Lead Visibility</strong>:<br />
+Leads that are deleted from the system will now be fully removed from visibility for all users, avoiding confusion.</li>
 </ul>
+
+<h2 id="step-flow">2. Step Flow</h2>
+
+<ul>
+  <li><strong>POS to Connect Integration</strong>:<br />
+Integrated step-up flow for POS to Connect and created support ticket functionality for deployments.</li>
+</ul>
+
+<h2 id="bug-fixes">3. Bug Fixes</h2>
+
+<ul>
+  <li>
+    <p><strong>Residual Program Screen Bug Fixes</strong>:<br />
+Addressed issues within the residual program screen.</p>
+  </li>
+  <li>
+    <p><strong>Additional Owner Issue</strong>:<br />
+Fixed an issue when adding a second owner.</p>
+    <ul>
+      <li>Previously, while in Lead status, adding additional owners would sometimes redirect the user to the “Authorized Representative” field upon interacting with the “Search Address” field for Additional Owner 1.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
 
 <h2 id="known-issues">Known Issues</h2>
 
-<p>SMS Functionality: SMS is currently not functioning for sending Merchant Applications or Support cases. This is a work in progress and is dependent on the SMS service provider.</p>
-
-<p>Visa Partial Boarding Approve Button: The approve button is disappearing in Visa partial boarding. A temporary workaround involves setting the responsible flag value to “false.” This workaround will be necessary until the issue is fixed.</p>
-
-<p>Adobe eSign Error: Adobe is returning the error: {“code”:”AGREEMENT_NOT_EXPOSED”,”message”:”The agreement has not yet been exposed to the requested participant”}. This is a known intermittent issue for eSigning documents in this release.</p>
+<ul>
+  <li>
+    <p><strong>SMS Functionality</strong>:<br />
+SMS is currently not functioning for sending Merchant Applications or Support cases.<br />
+<em>This is a work in progress and is dependent on the SMS service provider.</em></p>
+  </li>
+  <li>
+    <p><strong>Visa Partial Boarding - Approve Button</strong>:<br />
+The approve button is disappearing in Visa partial boarding.<br />
+<em>Workaround</em>: Set the responsible flag value to <code>false</code> until the issue is resolved.</p>
+  </li>
+  <li>
+    <p><strong>Adobe eSign Error</strong>:<br />
+An issue has been identified where Adobe returns the following error:
+```json
+{
+  “code”: “AGREEMENT_NOT_EXPOSED”,
+  “message”: “The agreement has not yet been exposed to the requested participant”
+}</p>
+  </li>
+</ul>
 
 <h2 id="whats-changed">What’s Changed</h2>
 <ul>
