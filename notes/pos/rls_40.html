@@ -4,73 +4,118 @@
 
 <hr />
 
-<h3 id="new-features"><strong>🆕 New Features</strong></h3>
-<p><strong>AI-Driven Customer Reviews</strong><br />
-- Introduced an AI-powered review process to simplify review posting for customers on Google and Yelp.<br />
-- After a sale, customers receive a link via SMS or email prompting them to answer a few questions about their experience. AI generates three draft reviews based on their responses, allowing customers to choose and post directly to Google or Yelp.</p>
+<h2 id="new-features">🆕 New Features</h2>
+
+<h3 id="ai-driven-customer-reviews"><strong>AI-Driven Customer Reviews</strong></h3>
+<ul>
+  <li>Introduced an AI-powered review process to simplify review posting for customers on Google and Yelp.</li>
+  <li>After a sale, customers receive a link via SMS or email prompting them to answer a few questions about their experience. AI generates three draft reviews based on their responses, allowing customers to choose and post directly to Google or Yelp.</li>
+</ul>
 
 <hr />
 
-<h3 id="enhancements"><strong>🛠️ Enhancements</strong></h3>
+<h2 id="enhancements">🛠️ Enhancements</h2>
 
-<p><strong>Appointment Module Enhancements</strong><br />
-- Introduced new appointment statuses and updated booking flows for improved handling of in-person and virtual appointments:<br />
-  - <strong>New Appointment Statuses</strong>:
-    - <strong>DRAFT</strong>: Appointment created without slot blocking, ideal for sending payment links.
-    - <strong>RESERVED</strong>: Slot is temporarily held during booking.
-    - <strong>CONFIRMED</strong>: Appointment confirmed without payment; slots are blocked.
-    - <strong>BOOKING FEE PAID</strong>: Booking fee paid; appointment confirmed.
-    - <strong>PAID</strong>: Full payment received; appointment confirmed.
-    - <strong>CANCELLED</strong>: Appointment canceled; slots released.<br />
-  - <strong>Enhanced Booking Flows</strong>:
-    - <strong>Merchant Booking</strong>: Support for deposits, direct confirmations, and payment links for both in-person and virtual appointments.
-    - <strong>Customer Booking</strong>: Options for upfront payments, deposits, or direct confirmations.<br />
-  - <strong>Improved Slot Handling</strong>:
-    - Slots blocked only after confirmation or successful payment.
-    - Expired or invalid payment links automatically release unblocked slots.
-    - Reserved slots updated every hour based on payment status.<br />
-  - <strong>Calendar and Visibility Updates</strong>:
-    - Appointments in DRAFT, RESERVED, and CANCELLED statuses are excluded from calendars and customer views.
-  - <strong>Automated Status Updates</strong>:
-    - RESERVED appointments reviewed hourly to transition to appropriate statuses (DRAFT, BOOKING FEE PAID, or PAID).</p>
+<h3 id="appointment-module-enhancements"><strong>Appointment Module Enhancements</strong></h3>
+<ul>
+  <li>Introduced new appointment statuses and updated booking flows for improved handling of in-person and virtual appointments:
+    <ul>
+      <li><strong>New Appointment Statuses</strong>:
+        <ul>
+          <li><strong>DRAFT</strong>: Appointment created without slot blocking, ideal for sending payment links.</li>
+          <li><strong>RESERVED</strong>: Slot is temporarily held during booking.</li>
+          <li><strong>CONFIRMED</strong>: Appointment confirmed without payment; slots are blocked.</li>
+          <li><strong>BOOKING FEE PAID</strong>: Booking fee paid; appointment confirmed.</li>
+          <li><strong>PAID</strong>: Full payment received; appointment confirmed.</li>
+          <li><strong>CANCELLED</strong>: Appointment canceled; slots released.</li>
+        </ul>
+      </li>
+      <li><strong>Enhanced Booking Flows</strong>:
+        <ul>
+          <li><strong>Merchant Booking</strong>: Support for deposits, direct confirmations, and payment links for both in-person and virtual appointments.</li>
+          <li><strong>Customer Booking</strong>: Options for upfront payments, deposits, or direct confirmations.</li>
+        </ul>
+      </li>
+      <li><strong>Improved Slot Handling</strong>:
+        <ul>
+          <li>Slots blocked only after confirmation or successful payment.</li>
+          <li>Expired or invalid payment links automatically release unblocked slots.</li>
+          <li>Reserved slots updated every hour based on payment status.</li>
+        </ul>
+      </li>
+      <li><strong>Calendar and Visibility Updates</strong>:
+        <ul>
+          <li>Appointments in DRAFT, RESERVED, and CANCELLED statuses are excluded from calendars and customer views.</li>
+        </ul>
+      </li>
+      <li><strong>Automated Status Updates</strong>:
+        <ul>
+          <li>RESERVED appointments reviewed hourly to transition to appropriate statuses (DRAFT, BOOKING FEE PAID, or PAID).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<p><strong>Unified Checkout VISA SDK Update</strong><br />
-- Upgraded to SDK version 0.22 with performance improvements, significantly reducing page load time.</p>
+<h3 id="unified-checkout-visa-sdk-update"><strong>Unified Checkout VISA SDK Update</strong></h3>
+<ul>
+  <li>Upgraded to SDK version 0.22 with performance improvements, significantly reducing page load time.</li>
+</ul>
 
-<p><strong>Sales Flow Improvements</strong><br />
-- Updated sales receipt design to align with PAX terminal printing updates.<br />
-- Refactored Sale Details and Transaction Refund screens for improved user experience.<br />
-- Added tip amounts to the total sale amount.<br />
-- Removed appointment deposits from the sale details screen.</p>
+<h3 id="sales-flow-improvements"><strong>Sales Flow Improvements</strong></h3>
+<ul>
+  <li>Updated sales receipt design to align with PAX terminal printing updates.</li>
+  <li>Refactored Sale Details and Transaction Refund screens for improved user experience.</li>
+  <li>Added tip amounts to the total sale amount.</li>
+  <li>Removed appointment deposits from the sale details screen.</li>
+</ul>
 
-<p><strong>Step Flow Conversion Tuning</strong><br />
-- Optimized onboarding flow for smoother conversion rates.</p>
+<h3 id="step-flow-conversion-tuning"><strong>Step Flow Conversion Tuning</strong></h3>
+<ul>
+  <li>Optimized onboarding flow for smoother conversion rates.</li>
+</ul>
 
-<p><strong>Loader Design Updates</strong><br />
-- Enhanced loader designs for improved user experience in the POS app.</p>
+<h3 id="loader-design-updates"><strong>Loader Design Updates</strong></h3>
+<ul>
+  <li>Enhanced loader designs for improved user experience in the POS app.</li>
+</ul>
 
-<p><strong>Technician Service Management</strong><br />
-- New updates for technician-specific service assignments:<br />
-  - Default service cost and commission percentages assigned to all technicians when a new service is added.<br />
-  - Merchants can manage technician services:
-    - Remove services technicians cannot perform.
-    - Update service costs and commission percentages individually.<br />
-  - Booking flow now displays only technicians eligible for the selected service.<br />
-  - When adding a new technician, default services, costs, and commissions are assigned automatically, with options for adjustment.</p>
+<h3 id="technician-service-management"><strong>Technician Service Management</strong></h3>
+<ul>
+  <li>New updates for technician-specific service assignments:
+    <ul>
+      <li>Default service cost and commission percentages assigned to all technicians when a new service is added.</li>
+      <li>Merchants can manage technician services:
+        <ul>
+          <li>Remove services technicians cannot perform.</li>
+          <li>Update service costs and commission percentages individually.</li>
+        </ul>
+      </li>
+      <li>Booking flow now displays only technicians eligible for the selected service.</li>
+      <li>When adding a new technician, default services, costs, and commissions are assigned automatically, with options for adjustment.</li>
+    </ul>
+  </li>
+</ul>
 
-<p><strong>SignalR Reliability Improvements</strong><br />
-- Enhanced SignalR reconnection functionality for better reliability, ensuring group joins and reconnections even after app sleeps or disconnects.</p>
+<h3 id="signalr-reliability-improvements"><strong>SignalR Reliability Improvements</strong></h3>
+<ul>
+  <li>Enhanced SignalR reconnection functionality for better reliability, ensuring group joins and reconnections even after app sleeps or disconnects.</li>
+</ul>
 
-<p><strong>Sales Receipts Enhancements</strong><br />
-- Merchants can now choose between PAX terminals, external printers, or email for receipt printing.<br />
-- Streamlined receipt workflow for easier management and sharing with customers.</p>
+<h3 id="sales-receipts-enhancements"><strong>Sales Receipts Enhancements</strong></h3>
+<ul>
+  <li>Merchants can now choose between PAX terminals, external printers, or email for receipt printing.</li>
+  <li>Streamlined receipt workflow for easier management and sharing with customers.</li>
+</ul>
 
-<p><strong>Tax Refactoring</strong><br />
-- Improved readability and consistency of tax-related code, with more intuitive display of tax amounts.</p>
+<h3 id="tax-refactoring"><strong>Tax Refactoring</strong></h3>
+<ul>
+  <li>Improved readability and consistency of tax-related code, with more intuitive display of tax amounts.</li>
+</ul>
 
 <hr />
 
-<h3 id="bug-fixes"><strong>🐛 Bug Fixes</strong></h3>
+<h2 id="bug-fixes">🐛 Bug Fixes</h2>
 <ul>
   <li>Fixed an issue where cash discounts were not shown in sale details.</li>
   <li>Removed unused domain links from the app.</li>
@@ -78,14 +123,19 @@
 
 <hr />
 
-<h3 id="refactor-and-performance-enhancements"><strong>🔄 Refactor and Performance Enhancements</strong></h3>
+<h2 id="refactor-and-performance-enhancements">🔄 Refactor and Performance Enhancements</h2>
 
-<p><strong>Automation Locator Issue Fix</strong><br />
-- Replaced libraries to resolve QA script recognition issues and enhance stability.</p>
+<h3 id="automation-locator-issue-fix"><strong>Automation Locator Issue Fix</strong></h3>
+<ul>
+  <li>Replaced libraries to resolve QA script recognition issues and enhance stability.</li>
+</ul>
 
-<p><strong>Database Cleanup</strong><br />
-- Cleaned up unused database columns for better efficiency.</p>
+<h3 id="database-cleanup"><strong>Database Cleanup</strong></h3>
+<ul>
+  <li>Cleaned up unused database columns for better efficiency.</li>
+</ul>
 
 <hr />
 
 <p>This release brings significant new features, performance improvements, and critical bug fixes to Payzli POS. We continue to enhance the app to provide a better experience for our users. For more details, please refer to the <a href="https://payzli.com/help-categories/payzli-pos/">support documentation</a> or contact our support team for assistance.</p>
+
