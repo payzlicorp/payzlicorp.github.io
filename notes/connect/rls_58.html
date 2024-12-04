@@ -1,0 +1,216 @@
+<h2 id="included-in-release">Included in Release</h2>
+
+<p><strong>Payzli Connect v6.8.0</strong>
+Date: Dec 4, 2024</p>
+
+<h2 id="new-features">🆕 New Features</h2>
+
+<h3 id="advanced-alerts-module">Advanced Alerts Module</h3>
+
+<p>A new rule-based alert system for improved visibility and proactive decision-making.</p>
+
+<p><strong>Key Features:</strong> 
+Define custom alert conditions and tailor alerts for users and organizations. 
+Notifications include generic, activity-based, and transactional alerts (e.g., ACH rejects). 
+Supports stakeholders like underwriting, risk, partners, and support teams.</p>
+
+<p><strong>Business Value:</strong> 
+Enables real-time insights, proactive risk management, and improved collaboration through scalable, targeted alerts.</p>
+
+<h2 id="enhancements">🛠️ Enhancements</h2>
+
+<h3 id="isv-integration-enhancements">ISV Integration Enhancements</h3>
+<p>Introduces advanced tools for ISV partners, including sandbox environments, API integration</p>
+
+<p><strong>Highlights:</strong></p>
+
+<ul>
+  <li><strong>ISV Partner Creation</strong>: Simplified the process of creating ISV partners with an improved interface.</li>
+  <li><strong>ISV Dashboard</strong>: A newly introduced dashboard that provides an overview of ISV activities and metrics.</li>
+  <li><strong>Sandbox Mode</strong>: Users can now easily create a sandbox environment to test integrations and workflows effectively.</li>
+  <li><strong>Merchant Management</strong>: Enhanced capabilities to view and manage all onboarded merchants and leads in one place.</li>
+  <li><strong>API Enhancements</strong>:
+    <ul>
+      <li>Added APIs for Attachments management.</li>
+      <li>A new API to retrieve the list of all merchants associated with an ISV partner.</li>
+      <li>Webhooks for ACCOUNT_STATUS_UPDATE: Receive updates regarding account status changes.</li>
+      <li>New error webhooks for: ACCOUNT_BOARDING_ERROR: Captures issues during merchant account approval/boarding.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Business Value:</strong> 
+Streamlines partner workflows, enhances merchant management, and provides flexible branding for personalized experiences.</p>
+
+<h3 id="equipment-changes-step-up-flow">Equipment Changes (Step-Up Flow)</h3>
+<p>Updated payment mode workflows and enhanced equipment handling. 
+<strong>Key Features:</strong></p>
+
+<ul>
+  <li>Three payment modes: Paid by Partner, Pay In Full, Rental.</li>
+  <li>Flex fees dynamically applied based on payment mode.</li>
+  <li>View only mode will appear for partner generated leads. When a merchant signs up directly, they will be able to select equipment.</li>
+</ul>
+
+<p><strong>Business Value:</strong> 
+- Simplifies equipment workflows, ensuring transparency for merchants and flexibility for partners.</p>
+
+<h2 id="bug-fixes">🐛 Bug Fixes</h2>
+
+<h3 id="invalid-routing-number-validation">Invalid Routing Number Validation</h3>
+<ul>
+  <li>Added 9-digit validation to prevent invalid routing numbers on the “Connect Your Bank” page.</li>
+</ul>
+
+<p><strong>Business Value:</strong></p>
+
+<ul>
+  <li>Improves data integrity during onboarding.</li>
+</ul>
+
+<h3 id="debit-and-diners-updates">Debit and Diners Updates</h3>
+
+<ul>
+  <li>Removed diners and debit options from pricing profiles across onboarding and updates.</li>
+</ul>
+
+<p>Business Value:</p>
+
+<ul>
+  <li>Ensures consistent and accurate profile handling.</li>
+</ul>
+
+<h3 id="repay-api-boarding-improvements">Repay API Boarding Improvements</h3>
+
+<ul>
+  <li>Enhanced logic for fees, interchange plans, and contact fields.</li>
+  <li>Updated default fees for Cost Plus accounts.</li>
+  <li>Updates to chargeback emails and sales rep fields.</li>
+</ul>
+
+<p>Business Value:</p>
+
+<ul>
+  <li>Improves compliance, accuracy, and process efficiency for Repay accounts.</li>
+</ul>
+
+<h3 id="mcc-7322-collection-agencies">MCC 7322 (Collection Agencies)</h3>
+
+<ul>
+  <li>Added MCC 7322 to improve compliance with Repay program guidelines.</li>
+</ul>
+
+<p><strong>Business Value:</strong></p>
+
+<ul>
+  <li>Enables accurate classification and proper account handling.</li>
+</ul>
+
+<h2 id="refactor-and-performance-enhancements">🔄 Refactor and Performance Enhancements</h2>
+
+<h3 id="ui-automation">UI Automation</h3>
+
+<ul>
+  <li>Introduced a regression checklist for stability testing in:</li>
+  <li>Partner onboarding.</li>
+  <li>Digital and physical conversion workflows.</li>
+  <li>Risk management and residual calculations.</li>
+</ul>
+
+<p><strong>Business Value:</strong> 
+Ensures platform reliability and reduces disruption risks for web and mobile applications.</p>
+
+<h2 id="whats-changed">What’s Changed</h2>
+<ul>
+  <li>added procedure to get team members and their notification settings f… by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3496</li>
+  <li>reverted the revert from “dev” to “qa” changes. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3528</li>
+  <li>240925 advanced alerts by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3499</li>
+  <li>Risk Investigation Refactoring Complete by @hbhankhar in https://github.com/payzlicorp/connect/pull/3356</li>
+  <li>Dev by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3529</li>
+  <li>fixed note section by @hbhankhar in https://github.com/payzlicorp/connect/pull/3530</li>
+  <li>QA:Assigning payzli org to ISV partner by @keshavajmera in https://github.com/payzlicorp/connect/pull/3532</li>
+  <li>QA - Fix: isv auth key saving logic by @keshavajmera in https://github.com/payzlicorp/connect/pull/3536</li>
+  <li>Fix: isv auth key saving logoc by @keshavajmera in https://github.com/payzlicorp/connect/pull/3535</li>
+  <li>Counter Signed Partner Agreement by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3540</li>
+  <li>chang routing number validation in merchant onobarding and update by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3534</li>
+  <li>Support case visibility fix for merchant by @snehapayzli in https://github.com/payzlicorp/connect/pull/3538</li>
+  <li>241123 advance alert fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3545</li>
+  <li>IPv4 calling for Experian APIs by @snehapayzli in https://github.com/payzlicorp/connect/pull/3516</li>
+  <li>Added email verification changes of isv sandbox merchant by @BharathPzli in https://github.com/payzlicorp/connect/pull/3544</li>
+  <li>Assigning payzli org to ISV partner by @keshavajmera in https://github.com/payzlicorp/connect/pull/3531</li>
+  <li>Fix: attachment logging and ISV sandbox signup confirmation url by @keshavajmera in https://github.com/payzlicorp/connect/pull/3539</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3547</li>
+  <li>241123 advance alert fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3548</li>
+  <li>241123 advance alert fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3550</li>
+  <li>fixed alert issue by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3552</li>
+  <li>241120 equipment section consistency UI by @BharathPzli in https://github.com/payzlicorp/connect/pull/3542</li>
+  <li>Fixed equipment paid by partner payload issue by @BharathPzli in https://github.com/payzlicorp/connect/pull/3557</li>
+  <li>fixed alert issue by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3556</li>
+  <li>Fixed isv sandbox bugfixes by @BharathPzli in https://github.com/payzlicorp/connect/pull/3551</li>
+  <li>241027 risk dashboard by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3507</li>
+  <li>added description in dashboard. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3558</li>
+  <li>241123 advance alert fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3549</li>
+  <li>fixed new status bug. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3559</li>
+  <li>added fix for newstatus in partner change status sms. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3560</li>
+  <li>removed wait for add attachments notification. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3561</li>
+  <li>Added support for closing any open drawer or dialog upon browser navigation by @BharathPzli in https://github.com/payzlicorp/connect/pull/3562</li>
+  <li>241125 hiding diners debit pricingprofile by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3543</li>
+  <li>
+    <ul>
+      <li>Integrated ISV Theme page in administration. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3546</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Added “Action” label on table header for action buttons. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3566</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Added “Action” label on table header for action buttons. by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3565</li>
+    </ul>
+  </li>
+  <li>added separate notifications for team assigned for merchants. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3567</li>
+  <li>enabled theme tab only for local server and dialbed for others unitil… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3568</li>
+  <li>241123 advance alert fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3569</li>
+  <li>Dev to QA by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3571</li>
+  <li>Fixed retry onboarding functionality in isv by @BharathPzli in https://github.com/payzlicorp/connect/pull/3570</li>
+  <li>fixed tooltip info icon alignments in advance alerts table by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3572</li>
+  <li>fixed tooltip info icon alignments in advance alerts table by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3573</li>
+  <li>241123 advance alert fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3574</li>
+  <li>241123 advance alert fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3575</li>
+  <li>commit is paid by partner in templates by @TahaShahabuddin in https://github.com/payzlicorp/connect/pull/3533</li>
+  <li>Backend changes for added is_paid_by_partner in Templates Equipment by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3576</li>
+  <li>added check for partner lead also while fetching asset information. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3577</li>
+  <li>241123 advance alert fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3578</li>
+  <li>boarding issues might fail: fix by @kumarvivekpayzli in https://github.com/payzlicorp/connect/pull/3474</li>
+  <li>Initialized default equipments upon changing auth platform in merchant profile slide out by @BharathPzli in https://github.com/payzlicorp/connect/pull/3579</li>
+  <li>QA:ambiguous column fix by @keshavajmera in https://github.com/payzlicorp/connect/pull/3581</li>
+  <li>fixed in both places by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3584</li>
+  <li>fixed in both places by @aryansingh0203 in https://github.com/payzlicorp/connect/pull/3583</li>
+  <li>241129 mcc code 7322  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3585</li>
+  <li>Dev by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3586</li>
+  <li>241123 advance alert fixes by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3587</li>
+  <li>added better logs in risk execution. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3588</li>
+  <li>Tsys amex opt blue status by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3591</li>
+  <li>QA:Webhook notifications on underwriting status update by @keshavajmera in https://github.com/payzlicorp/connect/pull/3592</li>
+  <li>Fixed equipment reset issues by @BharathPzli in https://github.com/payzlicorp/connect/pull/3593</li>
+  <li>if opt blue is prohibited then dont pass amex information to tsys by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3596</li>
+  <li>removing addAmexOptBlue by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3597</li>
+  <li>Fixed missing cookies causing bad request issues in digital app conversion flow by @BharathPzli in https://github.com/payzlicorp/connect/pull/3595</li>
+  <li>added better logs in risk execution. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3599</li>
+  <li>added method to run risk analysis manually. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3600</li>
+  <li>fixed merchant number in mid. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3603</li>
+  <li>20241203 sms fix by @snehapayzli in https://github.com/payzlicorp/connect/pull/3604</li>
+  <li>Fixed z-index of Signup footer in merchant signup flow by @BharathPzli in https://github.com/payzlicorp/connect/pull/3601</li>
+  <li>QA-Fix: Selecting linked merchants in case of multi merchant accounts by @keshavajmera in https://github.com/payzlicorp/connect/pull/3605</li>
+  <li>
+    <ul>
+      <li>removed noPermission props from PermissionWrapper component because… by @jagan-payzli in https://github.com/payzlicorp/connect/pull/3607</li>
+    </ul>
+  </li>
+  <li>fixed risk category delete issue. by @nikhil-negi in https://github.com/payzlicorp/connect/pull/3608</li>
+  <li>v6.8  by @snehalpayzli in https://github.com/payzlicorp/connect/pull/3610</li>
+</ul>
+
+<p><strong>Full Changelog</strong>: https://github.com/payzlicorp/connect/compare/rls_57…rls_58</p>
