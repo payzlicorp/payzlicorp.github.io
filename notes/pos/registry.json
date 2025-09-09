@@ -1,6 +1,5 @@
 {"Releases":[
-{"GitTag":"rls_42","Version":"13.0.0"}
-,{"GitTag":"rls_43","Version":"13.1.0"}
+{"GitTag":"rls_43","Version":"13.1.0"}
 ,{"GitTag":"rls_44","Version":"13.2.0"}
 ,{"GitTag":"rls_45","Version":"13.3.0"}
 ,{"GitTag":"rls_47","Version":"14.0.0"}
@@ -29,4 +28,5 @@
 ,{"GitTag":"rls_72","Version":"15.10.0"}
 ,{"GitTag":"rls_73","Version":"15.10.1"}
 ,{"GitTag":"rls_74","Version":"15.10.2"}
+,{"GitTag":"rls_75","Version":"15.11.0"}
 ]}
